@@ -10,7 +10,7 @@
 
          .column {
     float: left;
-    width: 50%;
+    width: 49%;
     font-family: "Comic Sans MS";
     background-color:white;
     
