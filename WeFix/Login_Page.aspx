@@ -9,7 +9,7 @@
 			margin-top: 50px;
 		}
 		#div {
-			margin: 150px auto;
+			margin: 50px auto;
 			width: 400px;
 			padding: 20px;
 			background-color: #ffffff;
@@ -44,27 +44,10 @@
 		input[type="submit"]:hover {
 			background-color: #3e8e41;
 		}
-		   .column {
-    float: left;
-    width: 50%;
-    font-family: "Comic Sans MS";
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 	</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	<div class="row">
-		<div class="column">
-	<img src="https://img.freepik.com/free-vector/maintenance-concept-illustration_114360-381.jpg?size=626&ext=jpg&ga=GA1.1.685505820.1680966427&semt=sph"/>
-    </div>
-		<div class="column">
-			<div id="div">
+    <div id="div">
            <label for="username">Username:</label>
 		<input type="text" id="username" name="username" />
 		<label for="password">Password:</label>
@@ -72,12 +55,9 @@
 		<center>
 		<input type="submit" value="Login" />
 		</center>
-				<center>
+    </div>
+	<center>
 	<a href="Registration_Page.aspx">Don't Have An Account</a>
 		</center>
-    </div>
-  </div>
-</div>
-
 
 </asp:Content>
