@@ -14,17 +14,20 @@
     .container{
         width: 80%;
         margin: 0 auto; /* Center the DIV horizontally */
+        color:aliceblue;
     }
     .fixed-footer{
         width: 100%;
         position: fixed;        
-        background: #57C5B6;
+        background: #333;
         padding: 10px 0;
         color: #393646;
+        left:0;
     }
     
     .fixed-footer{
         bottom: 0;
+        
     } 
 header {
   background-color: #333;
@@ -33,6 +36,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  height:40px;
+  
+  top:0;
+  
 }
 
 .social-icons a {

@@ -2,19 +2,34 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-    	body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  background-image:url("https://img.freepik.com/free-vector/maintenance-concept-illustration_114360-381.jpg?size=626&ext=jpg&ga=GA1.1.1141735572.1680859295&semt=sph");
+	    body {
+	        background-color:white;
+	        font-family: Arial, sans-serif;
+
+	    }
+
+         .column {
+    float: left;
+    width: 50%;
+    font-family: "Comic Sans MS";
+    background-color:white;
+    
 }
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .login-container {
-  background-color: #fff;
-  max-width: 560px;
-  margin: 50px auto;
+  background-color:white;
+  width: 400px;
+  margin: 100px auto;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  height:400px;
 }
 
 h2 {
@@ -73,6 +88,11 @@ button:hover {
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   <div class="row">
+       <div class="column">
+           <img src="https://img.freepik.com/free-vector/maintenance-concept-illustration_114360-381.jpg?size=626&ext=jpg&ga=GA1.1.685505820.1680966427&semt=sph" />
+       </div>
+       <div class="column">
     <div class="login-container">
       <h2>Login</h2>
         <div class="form-group">
@@ -89,4 +109,6 @@ button:hover {
         Don't have an account? <a href="Registration_Page.aspx">Register now</a>
       </div>
     </div>
+</div>
+</div>
 </asp:Content>

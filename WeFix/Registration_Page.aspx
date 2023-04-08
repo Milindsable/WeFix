@@ -4,7 +4,7 @@
     	body {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
-   background-image:url("https://img.freepik.com/free-vector/maintenance-concept-illustration_114360-381.jpg?size=626&ext=jpg&ga=GA1.1.1141735572.1680859295&semt=sph");
+   
 
 }
 
