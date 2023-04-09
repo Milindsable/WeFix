@@ -81,21 +81,28 @@ button:hover {
       <h2>Register</h2>
         <div class="form-group">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username" placeholder="Enter username">
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please enter the Username" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
         <div class="form-group">
           <label for="mobno">Mobile No:</label>
-          <input type="tel" id="phone" name="mobno" placeholder="Enter Mobile no">
+            <asp:TextBox ID="TextBox2" TextMode="number" runat="server" Height="30px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter the Mobile no" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter password">
+            <asp:TextBox ID="TextBox3" TextMode="Password" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Please enter the Password" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
+        
         <div class="form-group">
           <label for="confirm-password">Confirm Password:</label>
-          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password">
+            <asp:TextBox ID="TextBox4" TextMode="Password" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Re-enter the password" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password doset match" ControlToValidate="TextBox4" ControlToCompare="TextBox3"></asp:CompareValidator>
         </div>
-        <button type="submit">Register</button>
+        <asp:Button ID="Button1" runat="server" Text="Register" BackColor="#33CCFF" BorderColor="Black" BorderStyle="Solid" Height="35px" Width="75px" Font-Size="Medium" />
+        
      
       <div class="login-link">
         Already have an account? <a href="Login_Page.aspx">Login now</a>
