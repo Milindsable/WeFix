@@ -1,8 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WeFix.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="AboutUS.aspx.cs" Inherits="WeFix.AboutUS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
-     <style>
-   body {
+    <style>
+     body {
   margin: 0;
 }
 
@@ -36,18 +35,16 @@ li a:hover:not(.active) {
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <ul>
+
+     <ul>
   <li><a class="active" href="#home">Profile</a></li>
   <li><a href="#news">Worker</a></li>
   <li><a href="#contact">Contractor</a></li>
   <li><a href="#about">Appointments</a></li>
-  <li> <button style="position:fixed; bottom:50px; margin-left:70px" > <a href="Intro.aspx">Log Out</a> </button> </li>
 </ul>
 
-<div style="margin-left:20%;padding:1px 16px;height:1000px;background-color:#F3DEBA;">
-    <img style=" margin-top:100px;width:100%;" src="https://img.freepik.com/free-vector/set-builders-foreman-handymen-holding-tools-working_1262-19315.jpg?size=626&ext=jpg&ga=GA1.1.514523336.1681013300&semt=sph" />
-
-
-
-</div>
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;background-color:#F3DEBA;">
+        
+        <h1 style="margin-top:100px; margin-left:400px;"> About US</h1>
+    </div>
 </asp:Content>

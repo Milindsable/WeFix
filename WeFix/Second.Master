@@ -32,7 +32,7 @@
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
-  margin-top:0px;
+  margin-left:0px;
   position:fixed;
   width:100%;
 }
@@ -89,9 +89,9 @@
     <div class="header">
           <a href="#default" class="logo">WeFix</a>
           <div class="header-right">
-            <a class="active" href="Intro.aspx">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a class="active" href="Home.aspx">Home</a>
+            <a href="ContactUs.aspx">Contact</a>
+            <a href="AboutUS.aspx">About</a>
           </div>
     </div>
         <div>
