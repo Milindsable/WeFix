@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 	    body {
-	        background-color:white;
+	        background-color:snow;
 	        font-family: Arial, sans-serif;
 
 	    }
