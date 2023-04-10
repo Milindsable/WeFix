@@ -10,7 +10,7 @@
     to go underneath the header and footer */
     body{        
         
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         background-color:white;
     }
     .container{
