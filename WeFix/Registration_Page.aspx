@@ -4,8 +4,6 @@
     	body {
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
-   
-
 }
 
 .register-container {
@@ -80,14 +78,24 @@ button:hover {
 	<div class="register-container">
       <h2>Register</h2>
         <div class="form-group">
+          <label for="usertype">User Type:</label>
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="True" CellPadding="10" CellSpacing="10" RepeatDirection="Horizontal">
+                <asp:ListItem>Worker</asp:ListItem>
+                <asp:ListItem>User</asp:ListItem>
+                <asp:ListItem>Contractor</asp:ListItem>
+            </asp:RadioButtonList>
+        </div>
+        <div class="form-group">
           <label for="username">Username:</label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please enter the Username" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Invalid Username" ControlToValidate="TextBox1" ForeColor="Red" ValidationExpression="^[A-Za-z][A-Za-z0-9_@#$&amp;*]{7,29}$"></asp:RegularExpressionValidator>
         </div>
         <div class="form-group">
           <label for="mobno">Mobile No:</label>
-            <asp:TextBox ID="TextBox2" TextMode="number" runat="server" Height="30px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" Height="17px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter the Mobile no" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Invalid Phone Number" ControlToValidate="TextBox2" ForeColor="Red" ValidationExpression="^[0-9]{10}$"></asp:RegularExpressionValidator>
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
@@ -99,7 +107,7 @@ button:hover {
           <label for="confirm-password">Confirm Password:</label>
             <asp:TextBox ID="TextBox4" TextMode="Password" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Re-enter the password" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password doset match" ControlToValidate="TextBox4" ControlToCompare="TextBox3"></asp:CompareValidator>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password doset match" ControlToValidate="TextBox4" ControlToCompare="TextBox3" ForeColor="Red"></asp:CompareValidator>
         </div>
         <asp:Button ID="Button1" runat="server" Text="Register" BackColor="#33CCFF" BorderColor="Black" BorderStyle="Solid" Height="35px" Width="75px" Font-Size="Medium" />
         
