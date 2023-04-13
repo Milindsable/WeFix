@@ -5,14 +5,30 @@
 <html>
 <head runat="server">
     <title></title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href=
+"https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
     /* Add some padding on document's body to prevent the content
     to go underneath the header and footer */
     body{        
         
-        padding-bottom: 30px;
+        padding-bottom: 40px;
         background-color:white;
     }
+   
+    .pure-menu-heading {
+            color: #308d46;
+        }
+ 
+        .custom-display {
+            /* To limit the menu width to
+            the content of the menu: */
+            display: inline-block;
+        }
     .container{
         width: 80%;
         margin: 0 auto; /* Center the DIV horizontally */
@@ -86,6 +102,69 @@ a:hover {
             </nav>
         </header>
 
+        <div class=" pure-menu custom-display">
+        <ul class="pure-menu-list">
+            
+            <li class="pure-menu-heading">
+            <i class="fa fa-user" aria-hidden="true"></i>
+                profile
+            </li>
+ 
+            <li class="pure-menu-item
+                       pure-menu-has-children
+                       pure-menu-allow-hover">
+                <a href="#"
+                   class="pure-menu-link">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                   Workers
+                </a>
+ 
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a href="#"
+                           class="pure-menu-link">
+                            Painter
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#"
+                           class="pure-menu-link">
+                            carpenter
+
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#"
+                           class="pure-menu-link">
+                            masons
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#"
+                   class="pure-menu-link">
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                    Contractor
+                </a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#"
+                   class="pure-menu-link">
+                    <i class="fa fa-th-list" aria-hidden="true"></i>
+                    Appointment
+                </a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#"
+                   class="pure-menu-link" style="margin-top:240px;">
+                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                   logout
+                </a>
+            </li>
+ 
+        </ul>
+    </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
