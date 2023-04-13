@@ -11,7 +11,7 @@ namespace WeFix
 {
 
 
-    public partial class AboutUS
+    public partial class about
     {
     }
 }

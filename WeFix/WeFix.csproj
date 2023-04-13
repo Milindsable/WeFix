@@ -65,8 +65,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AboutUS.aspx" />
+    <Content Include="about.aspx" />
     <Content Include="ContactUs.aspx" />
+    <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
+    <Content Include="image\undraw_team_spirit_re_yl1v.svg" />
     <Content Include="Login_Page.aspx" />
     <Content Include="Registration_Page.aspx" />
     <Content Include="Web.config" />
@@ -74,12 +76,12 @@
     <Content Include="Home.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutUS.aspx.cs">
-      <DependentUpon>AboutUS.aspx</DependentUpon>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AboutUS.aspx.designer.cs">
-      <DependentUpon>AboutUS.aspx</DependentUpon>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>

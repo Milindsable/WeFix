@@ -14,21 +14,70 @@
     <style>
     /* Add some padding on document's body to prevent the content
     to go underneath the header and footer */
+    .navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:#892CDC;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:#892CDC;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
     body{        
         
         padding-bottom: 40px;
         background-color:white;
     }
    
-    .pure-menu-heading {
-            color: #308d46;
-        }
- 
-        .custom-display {
-            /* To limit the menu width to
-            the content of the menu: */
-            display: inline-block;
-        }
+    
     .container{
         width: 80%;
         margin: 0 auto; /* Center the DIV horizontally */
@@ -95,80 +144,57 @@ a:hover {
             </div>
             <nav class="site-navigation">
                 <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="about.aspx">About</a></li>
+                    <li><a href="ContactUs.aspx">Contact</a></li>
                 </ul>
             </nav>
         </header>
-
-        <div class=" pure-menu custom-display">
-        <ul class="pure-menu-list">
+        <div class="navbar">
+           
+  <a style="color:white;" href="#home">Profile</a>
             
-            <li class="pure-menu-heading">
-            <i class="fa fa-user" aria-hidden="true"></i>
-                profile
-            </li>
- 
-            <li class="pure-menu-item
-                       pure-menu-has-children
-                       pure-menu-allow-hover">
-                <a href="#"
-                   class="pure-menu-link">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                   Workers
-                </a>
- 
-                <ul class="pure-menu-children">
-                    <li class="pure-menu-item">
-                        <a href="#"
-                           class="pure-menu-link">
-                            Painter
-                        </a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#"
-                           class="pure-menu-link">
-                            carpenter
-
-                        </a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#"
-                           class="pure-menu-link">
-                            masons
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#"
-                   class="pure-menu-link">
-                    <i class="fa fa-address-card" aria-hidden="true"></i>
-                    Contractor
-                </a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#"
-                   class="pure-menu-link">
-                    <i class="fa fa-th-list" aria-hidden="true"></i>
-                    Appointment
-                </a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#"
-                   class="pure-menu-link" style="margin-top:240px;">
-                  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                   logout
-                </a>
-            </li>
- 
-        </ul>
+  <div class="subnav">
+    <button class="subnavbtn">Contractors<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#company">Construction</a>
+      <a href="#team">Painting</a>
+      <a href="#careers">Furniture</a>
+      <a href="#">Electrical</a>
     </div>
-        <div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Workers <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#bring">Painter</a>
+      <a href="#deliver">Carpanter</a>
+      <a href="#package">Mason</a>
+      <a href="#deliver">Electrician</a>
+        <a href="#deliver">Plumber</a>
+      
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Appointments <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Past</a>
+      <a href="#link2">Current</a>
+      
+    </div>
+  </div >
+            <div>
+  <a style="margin-left:700px;color:white;" href="Intro.aspx">Logout</a>
+
+   </div>
+</div>
+
+
+       
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+       
             </asp:ContentPlaceHolder>
-        </div>
+        
         <div class="fixed-footer">
             <div class="container">Copyright &copy; 2023 WeFix</div>        
         </div>
