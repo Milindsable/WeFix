@@ -1,49 +1,71 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="WeFix.ContactUs" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-     body {
-  margin: 0;
+     .container1 {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 20px;
+	background: #fff;
+	
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ccc;
 }
 
-ul {
-  list-style-type: none;
-  margin-top: 90px;
-  padding: 0;
-  width: 20%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
 }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
-li a.active {
-  background-color: #B46060;
-  color: white;
+input,
+textarea {
+	padding: 10px;
+	border-radius: 5px;
+	
+	width: 100%;
+	margin-bottom: 20px;
 }
 
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+textarea {
+	height: 150px;
+	resize: none;
 }
+
+.submit {
+	background: #3498db;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background: #2980b9;
+}
+
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <ul>
-  <li><a class="active" href="#home">Profile</a></li>
-  <li><a href="#news">Worker</a></li>
-  <li><a href="#contact">Contractor</a></li>
-  <li><a href="#about">Appointments</a></li>
-</ul>
-
-    <div style="margin-left:20%;padding:1px 16px;height:1000px;background-color:#F3DEBA;">
-        
-        <h1 style="margin-top:100px; margin-left:400px;"> Contact US</h1>
-    </div>
+     <div class="container1">
+		
+			<h1>Contact Us</h1>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+			<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject" required>
+			<label for="message">Message</label>
+			<textarea id="message" name="message" required></textarea>
+			<button type="submit" class="submit">Submit</button>
+		
+	</div>
 </asp:Content>
