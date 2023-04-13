@@ -159,7 +159,8 @@ a:hover {
                 <a href="#"
                    class="pure-menu-link" style="margin-top:240px;">
                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                   logout
+                    Logout
+                   
                 </a>
             </li>
  
