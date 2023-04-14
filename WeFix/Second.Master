@@ -183,7 +183,7 @@ a:hover {
     </div>
   </div >
             <div>
-  <a style="margin-left:600px;color:white;" href="Intro.aspx">Logout</a>
+  <a style="margin-left:700px;color:white;" href="Intro.aspx">Logout</a>
 
    </div>
 </div>
