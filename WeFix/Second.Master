@@ -152,7 +152,7 @@ a:hover {
         </header>
         <div class="navbar">
            
-  <a style="color:white;" href="#home">Profile</a>
+  <a style="color:white;" href="Profile_user.aspx">Profile</a>
             
   <div class="subnav">
     <button class="subnavbtn">Contractors<i class="fa fa-caret-down"></i></button>
@@ -170,7 +170,7 @@ a:hover {
       <a href="#deliver">Carpanter</a>
       <a href="#package">Mason</a>
       <a href="#deliver">Electrician</a>
-        <a href="#deliver">Plumber</a>
+        <a href="Workers_info_pages/plumbers_info.aspx">Plumber</a>
       
     </div>
   </div> 
