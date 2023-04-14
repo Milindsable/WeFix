@@ -2,12 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
       <style>
     	body {
-  background-color: white;
+  background-color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
 
 .register-container {
-  background-color:white;
+  background-color: #fff;
   max-width: 570px;
   margin: 50px auto;
   padding: 20px;
@@ -71,26 +71,10 @@ button:hover {
 .login-link a:hover {
   text-decoration: underline;
 }
- .column {
-    float: left;
-    width: 49%;
-    font-family: "Comic Sans MS";
-    background-color:white;
-    
-}
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
-    
-    <div class="column">
 	<div class="register-container">
       <h2>Register</h2>
         <div class="form-group">
@@ -132,9 +116,4 @@ button:hover {
         Already have an account? <a href="Login_Page.aspx">Login now</a>
       </div>
     </div>
-    </div>
-        <div class="column">
-        
-    </div>
-</div>
 </asp:Content>

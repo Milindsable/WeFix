@@ -3,10 +3,10 @@
     <style>
      .container1 {
 	max-width: 800px;
-	margin: 30px auto;
-	padding:30px;
+	margin: 0 auto;
+	padding: 50px 20px;
 	background: #fff;
-	width:500px;
+	
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px #ccc;
 }
@@ -29,7 +29,7 @@ textarea {
 	padding: 10px;
 	border-radius: 5px;
 	
-	width:90%;
+	width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -39,7 +39,7 @@ textarea {
 }
 
 .submit {
-	background: #9b5de5;
+	background: #3498db;
 	color: #fff;
 	border: none;
 	padding: 10px 20px;
@@ -48,31 +48,12 @@ textarea {
 }
 
 .submit:hover {
-	background: #7209b7;
-}
- .column {
-    float: left;
-    width: 49%;
-    font-family: "Comic Sans MS";
-    background-color:white;
-    
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+	background: #2980b9;
 }
 
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	<div class="row">
-	<div class="column">
-		<img style="margin-top:190px;" src="image/undraw_contact_us_re_4qqt (1).svg" />
-	</div>
-		<div class="column">
      <div class="container1">
 		
 			<h1>Contact Us</h1>
@@ -87,7 +68,4 @@ textarea {
 			<button type="submit" class="submit">Submit</button>
 		
 	</div>
-  </div>
-</div>
-
 </asp:Content>
