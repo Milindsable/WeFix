@@ -68,6 +68,8 @@
     <Content Include="about.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
+    <Content Include="image\undraw_contact_us_re_4qqt %281%29.svg" />
+    <Content Include="image\undraw_sign_up_n6im %281%29.svg" />
     <Content Include="image\undraw_team_spirit_re_yl1v.svg" />
     <Content Include="Login_Page.aspx" />
     <Content Include="Registration_Page.aspx" />
