@@ -69,11 +69,13 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
     <Content Include="image\undraw_team_spirit_re_yl1v.svg" />
+    <Content Include="image\workers_img\plumber.jpg" />
     <Content Include="Login_Page.aspx" />
     <Content Include="Registration_Page.aspx" />
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Workers_info_pages\plumbers_info.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -132,6 +134,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Workers_info_pages\plumbers_info.aspx.cs">
+      <DependentUpon>plumbers_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Workers_info_pages\plumbers_info.aspx.designer.cs">
+      <DependentUpon>plumbers_info.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
