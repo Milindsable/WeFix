@@ -104,7 +104,7 @@ button:hover {
             <asp:TextBox ID="TextBox2" TextMode="Password" runat="server"></asp:TextBox>  
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter the password" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Login" BackColor="#33CCFF" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Height="35px" Width="75px" />
+        <asp:Button ID="Button1" runat="server" OnClick="LoginButton_Click" Text="Login" BackColor="#33CCFF" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Height="35px" Width="75px" />
       <div class="register-link">
         Don't have an account? <a href="Registration_Page.aspx">Register now</a>
       </div>

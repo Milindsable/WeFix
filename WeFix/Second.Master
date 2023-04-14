@@ -187,12 +187,7 @@ a:hover {
 
    </div>
 </div>
-
-
-       
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                
-       
             </asp:ContentPlaceHolder>
         
         <div class="fixed-footer">
