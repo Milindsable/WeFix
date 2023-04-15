@@ -5,7 +5,9 @@
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
-
+ #additional{
+    display: none;
+  }
 .register-container {
   background-color: #fff;
   max-width: 570px;
@@ -79,12 +81,10 @@ button:hover {
       <h2>Register</h2>
         <div class="form-group">
           <label for="usertype">User Type:</label>
-            <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="True" CellPadding="10" CellSpacing="10" RepeatDirection="Horizontal">
-                <asp:ListItem>Worker</asp:ListItem>
-                <asp:ListItem>User</asp:ListItem>
-                <asp:ListItem>Contractor</asp:ListItem>
-            </asp:RadioButtonList>
-        </div>
+            <input id="Radio1" type="radio" value="worker" name="option"/>Worker
+            <input id="Radio2" type="radio" value="user" name="option" />User
+            <input id="Radio3" type="radio" value="contractor" name="option"/>Contractor
+</div>
         <div class="form-group">
           <label for="username">Username:</label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
@@ -114,6 +114,26 @@ button:hover {
      
       <div class="login-link">
         Already have an account? <a href="Login_Page.aspx">Login now</a>
+
       </div>
+       
     </div>
+     <div id="additional">
+            <label for="additional">work type:</label>
+            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+
+        </div>
+    <script>
+        const additionalField = document.getElementById("additional");
+        const radioButtons = document.querySelectorAll('input[type="radio"][name="option"]');
+  radioButtons.forEach(function(radioButton) {
+    radioButton.addEventListener("change", function() {
+      if (this.value === "user") {
+        additionalField.style.display = "block";
+      } else {
+        additionalField.style.display = "none";
+      }
+    });
+  });
+    </script>
 </asp:Content>
