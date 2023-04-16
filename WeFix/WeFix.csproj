@@ -76,6 +76,7 @@
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="workerRegi.aspx" />
     <Content Include="Workers_info_pages\plumbers_info.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +143,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="workerRegi.aspx.cs">
+      <DependentUpon>workerRegi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="workerRegi.aspx.designer.cs">
+      <DependentUpon>workerRegi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Workers_info_pages\plumbers_info.aspx.cs">
       <DependentUpon>plumbers_info.aspx</DependentUpon>

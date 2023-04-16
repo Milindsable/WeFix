@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace WeFix
 {
-    public partial class Registration_Page : System.Web.UI.Page
+    public partial class WebForm3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

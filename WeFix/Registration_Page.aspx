@@ -5,9 +5,7 @@
   background-color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
- #additional{
-    display: none;
-  }
+ 
 .register-container {
   background-color: #fff;
   max-width: 570px;
@@ -45,14 +43,18 @@ input[type="text"], input[type="tel"], input[type="password"] {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-button {
-  background-color: #4CAF50;
-  color: #fff;
+.b {
+  background-color: #F3DEBA;
+  color:black;
+  font-weight:bold;
+  font-size:medium;
   padding: 10px;
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   cursor: pointer;
+  margin-left:190px;
+  width:200px;
 }
 
 button:hover {
@@ -65,7 +67,7 @@ button:hover {
 }
 
 .login-link a {
-  color: #4CAF50;
+  color: #B46060;
   text-decoration: none;
   font-weight: bold;
 }
@@ -79,12 +81,7 @@ button:hover {
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	<div class="register-container">
       <h2>Register</h2>
-        <div class="form-group">
-          <label for="usertype">User Type:</label>
-            <input id="Radio1" type="radio" value="worker" name="option"/>Worker
-            <input id="Radio2" type="radio" value="user" name="option" />User
-            <input id="Radio3" type="radio" value="contractor" name="option"/>Contractor
-</div>
+        
         <div class="form-group">
           <label for="username">Username:</label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
@@ -109,31 +106,14 @@ button:hover {
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Re-enter the password" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password doset match" ControlToValidate="TextBox4" ControlToCompare="TextBox3" ForeColor="Red"></asp:CompareValidator>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Register" BackColor="#33CCFF" BorderColor="Black" BorderStyle="Solid" Height="35px" Width="75px" Font-Size="Medium" />
+        <asp:Button class="b" ID="Button1" runat="server" Text="Register as User"/>
         
-     
       <div class="login-link">
-        Already have an account? <a href="Login_Page.aspx">Login now</a>
-
+        Already have an account? <a href="Login_Page.aspx">Login now</a><br /><br />
+       Register as Worker Or contractor <a href="workerRegi.aspx">Register Here..</a>
       </div>
        
     </div>
-     <div id="additional">
-            <label for="additional">work type:</label>
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-
-        </div>
-    <script>
-        const additionalField = document.getElementById("additional");
-        const radioButtons = document.querySelectorAll('input[type="radio"][name="option"]');
-  radioButtons.forEach(function(radioButton) {
-    radioButton.addEventListener("change", function() {
-      if (this.value === "user") {
-        additionalField.style.display = "block";
-      } else {
-        additionalField.style.display = "none";
-      }
-    });
-  });
-    </script>
+     
+    
 </asp:Content>
