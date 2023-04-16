@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WeFix.Workers_info_pages
+namespace WeFix
 {
 
 
-    public partial class WebForm1
+    public partial class Plumbers_info1
     {
     }
 }

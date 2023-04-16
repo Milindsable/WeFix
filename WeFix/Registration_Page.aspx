@@ -110,7 +110,7 @@ button:hover {
         
       <div class="login-link">
         Already have an account? <a href="Login_Page.aspx">Login now</a><br /><br />
-       Register as Worker Or contractor <a href="workerRegi.aspx">Register Here..</a>
+       Register as Worker Or contractor <a href="Worker_registration.aspx">Register Here..</a>
       </div>
        
     </div>

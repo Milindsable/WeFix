@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/first.Master" AutoEventWireup="true" CodeBehind="workerRegi.aspx.cs" Inherits="WeFix.WebForm3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/first.Master" AutoEventWireup="true" CodeBehind="Worker_registration.aspx.cs" Inherits="WeFix.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         body {
@@ -79,7 +79,8 @@ button:hover {
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="register-container">
+
+     <div class="register-container">
       <h2>Register</h2>
          <div class="form-group">
             <label for="type">Register As</label><br />
