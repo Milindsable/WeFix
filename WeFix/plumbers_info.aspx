@@ -1,13 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="plumbers_info.aspx.cs" Inherits="WeFix.Workers_info_pages.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-.product-container {
+.product-container 
+{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.product-item {
+.product-item 
+{
   position: relative;
   margin: 10px;
   width: 200px;
@@ -139,7 +141,6 @@
       <button class="product-btn">View Details</button>
     </div>
   </div>
-  <!-- more product items here -->
 </div>
 
 

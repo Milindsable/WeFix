@@ -76,7 +76,7 @@
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="Workers_info_pages\plumbers_info.aspx" />
+    <Content Include="plumbers_info.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -143,11 +143,11 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Workers_info_pages\plumbers_info.aspx.cs">
+    <Compile Include="plumbers_info.aspx.cs">
       <DependentUpon>plumbers_info.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Workers_info_pages\plumbers_info.aspx.designer.cs">
+    <Compile Include="plumbers_info.aspx.designer.cs">
       <DependentUpon>plumbers_info.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
