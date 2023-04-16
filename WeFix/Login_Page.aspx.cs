@@ -11,21 +11,22 @@ namespace WeFix
     {
             protected void LoginButton_Click(object sender, EventArgs e)
             {
-                string username = "myusername";
-                string password = "mypassword";
+                    
+                    string username = "myusername";
+                    string password = "mypassword";
 
-                string inputUsername = TextBox1.Text;
-                string inputPassword = TextBox2.Text;
+                    string inputUsername = TextBox1.Text;
+                    string inputPassword = TextBox2.Text;
 
-                if (inputUsername == username && inputPassword == password)
-                {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "LoginSuccess", "alert('Login successful!');", true);
-                    Response.Redirect("Home.aspx");
-                }
-                else
-                {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "LoginFailed", "alert('Invalid username or password.');", true);
-                }
+                    if (inputUsername == username && inputPassword == password)
+                    {
+                        ScriptManager.RegisterStartupScript(this, GetType(), "LoginSuccess", "alert('Login successful!');", true);
+                        Response.Redirect("Home.aspx");
+                    }
+                    else
+                    {
+                        ScriptManager.RegisterStartupScript(this, GetType(), "LoginFailed", "alert('Invalid username or password.');", true);
+                    }
             }
     }
 }

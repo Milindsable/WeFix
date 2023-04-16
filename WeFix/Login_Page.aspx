@@ -29,7 +29,7 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  height:400px;
+  height:500px;
 }
 
 h2 {
@@ -95,6 +95,15 @@ button:hover {
        <div class="column">
     <div class="login-container">
       <h2>Login</h2>
+        <div class="form-group">
+          <label for="usertype">User Type:</label>
+            <asp:DropDownList ID="DropDownList1" runat="server" Height="40px" Width="150px">
+                <asp:ListItem>Worker</asp:ListItem>
+                <asp:ListItem>Contractor</asp:ListItem>
+                <asp:ListItem>User</asp:ListItem>
+                <asp:ListItem>Admin</asp:ListItem>
+            </asp:DropDownList>
+        </div>
         <div class="form-group">
           <label for="username">Username:</label>
           <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the username" ControlToValidate="TextBox1" ForeColor="Red"></asp:RequiredFieldValidator>

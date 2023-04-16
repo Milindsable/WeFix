@@ -77,7 +77,6 @@
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="contractor_home.aspx" />
     <Content Include="Worker_registration.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -159,13 +158,6 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="contractor_home.aspx.cs">
-      <DependentUpon>contractor_home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="contractor_home.aspx.designer.cs">
-      <DependentUpon>contractor_home.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Worker_registration.aspx.cs">
       <DependentUpon>Worker_registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,6 +177,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Worker_master.Master" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
