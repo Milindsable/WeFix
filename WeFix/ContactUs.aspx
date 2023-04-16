@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
      .container1 {
-	max-width: 800px;
-	margin: 0 auto;
+	max-width: 550px;
+	margin: 30px auto;
 	padding: 50px 20px;
 	background: #fff;
 	
@@ -29,7 +29,7 @@ textarea {
 	padding: 10px;
 	border-radius: 5px;
 	
-	width: 100%;
+	width: 95%;
 	margin-bottom: 20px;
 }
 
