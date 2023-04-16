@@ -77,7 +77,6 @@
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="Worker_home.aspx" />
     <Content Include="Worker_registration.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +107,13 @@
     </Compile>
     <Compile Include="Login_Page.aspx.designer.cs">
       <DependentUpon>Login_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterContractor.Master.cs">
+      <DependentUpon>masterContractor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterContractor.Master.designer.cs">
+      <DependentUpon>masterContractor.Master</DependentUpon>
     </Compile>
     <Compile Include="Plumbers_info1.aspx.cs">
       <DependentUpon>Plumbers_info1.aspx</DependentUpon>
@@ -152,20 +158,6 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Worker_home.aspx.cs">
-      <DependentUpon>Worker_home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Worker_home.aspx.designer.cs">
-      <DependentUpon>Worker_home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Worker_master.Master.cs">
-      <DependentUpon>Worker_master.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Worker_master.Master.designer.cs">
-      <DependentUpon>Worker_master.Master</DependentUpon>
-    </Compile>
     <Compile Include="Worker_registration.aspx.cs">
       <DependentUpon>Worker_registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -177,6 +169,7 @@
   <ItemGroup>
     <Content Include="first.Master" />
     <Content Include="Second.Master" />
+    <Content Include="masterContractor.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
