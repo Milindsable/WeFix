@@ -11,7 +11,7 @@ namespace WeFix
 {
 
 
-    public partial class WebForm4
+    public partial class Contractor_home
     {
     }
 }

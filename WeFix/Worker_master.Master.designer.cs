@@ -11,7 +11,7 @@ namespace WeFix
 {
 
 
-    public partial class Worker_master
+    public partial class Site1
     {
 
         /// <summary>

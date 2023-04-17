@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Worker_master.master.cs" Inherits="WeFix.Worker_master" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Worker_master.Master.cs" Inherits="WeFix.Site1" %>
 
 <!DOCTYPE html>
 
@@ -140,13 +140,13 @@ a:hover {
 <body>
     <form id="form1" runat="server">
 
-        <header class="site-header">
+         <header class="site-header">
             <div class="site-identity">
                 <h1 style="font-family:cursive;"><a href="#">WeFix</a></h1>
             </div>
             <nav class="site-navigation">
                 <ul class="nav">
-                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="Worker_ho.aspx">Home</a></li>
                     <li><a href="about.aspx">About</a></li>
                     <li><a href="ContactUs.aspx">Contact</a></li>
                 </ul>
@@ -157,7 +157,7 @@ a:hover {
   <a style="color:white;" href="Profile_user.aspx">Profile</a>
             
   <div class="subnav">
-    <button class="subnavbtn">Feedback<i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Feedback</button>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Appointments <i class="fa fa-caret-down"></i></button>
@@ -167,7 +167,7 @@ a:hover {
     </div>
   </div >
      <div>
-         <a style="margin-left:600px;color:white;" href="Intro.aspx">Logout</a>
+         <a style="margin-left:750px;color:white;" href="Intro.aspx">Logout</a>
      </div>
 </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
