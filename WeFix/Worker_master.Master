@@ -147,8 +147,8 @@ a:hover {
             <nav class="site-navigation">
                 <ul class="nav">
                     <li><a href="Worker_ho.aspx">Home</a></li>
-                    <li><a href="about.aspx">About</a></li>
-                    <li><a href="ContactUs.aspx">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
