@@ -84,8 +84,10 @@ button:hover {
       <h2>Register</h2>
          <div class="form-group">
             <label for="type">Register As</label><br />
-            worker<input id="Radio1" type="radio" name="option" />
-            contractor<input id="Radio2" type="radio" name="option"/><br />
+             <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                 <asp:ListItem Value="Worker">Worker</asp:ListItem>
+                 <asp:ListItem Value="Contractor">Contractor</asp:ListItem>
+             </asp:RadioButtonList>
         </div>
         <div class="form-group">
            <label for="name">Name</label>
@@ -102,9 +104,7 @@ button:hover {
         <div class="form-group">
             <label for="skills">Skills</label>
                 <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-       
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox2" ForeColor="Red"></asp:RequiredFieldValidator>
-    </div>
+        </div>
     <div class="form-group">
         <label for="phone">Phone No.</label>
         <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
@@ -123,18 +123,18 @@ button:hover {
         </div>
         <div class="form-group">
             <label for="pass">Password</label>
-            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox7" TextMode="Password" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox7" ForeColor="Red"></asp:RequiredFieldValidator>
 
         </div>
         <div class="form-group">
             <label for="confirm-pass">Confirm Password</label>
-            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox8" TextMode="Password" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox8" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="password  doesn't match" ControlToCompare="TextBox7" ControlToValidate="TextBox8" ForeColor="Red"></asp:CompareValidator>
         </div>
        
-        <asp:Button class="b" ID="Button1" runat="server" Text="Register" />
+        <asp:Button class="b" ID="Button1" onClick="Button1_Click" runat="server" Text="Register" />
        <div class="login-link">
         Already have an account? <a href="Login_Page.aspx">Login now</a>
     </div>
