@@ -90,7 +90,7 @@ button:hover {
         </div>
         <div class="form-group">
           <label for="mobno">Mobile No:</label>
-            <asp:TextBox ID="TextBox2" runat="server" Height="17px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter the Mobile no" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Invalid Phone Number" ControlToValidate="TextBox2" ForeColor="Red" ValidationExpression="^[0-9]{10}$"></asp:RegularExpressionValidator>
         </div>
@@ -106,7 +106,7 @@ button:hover {
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Re-enter the password" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Password doset match" ControlToValidate="TextBox4" ControlToCompare="TextBox3" ForeColor="Red"></asp:CompareValidator>
         </div>
-        <asp:Button class="b" ID="Button1" runat="server" Text="Register as User"/>
+        <asp:Button class="b" ID="Button1" runat="server" onClick="Button1_Click" Text="Register as User"/>
         
       <div class="login-link">
         Already have an account? <a href="Login_Page.aspx">Login now</a><br /><br />
