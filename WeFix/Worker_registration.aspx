@@ -98,7 +98,7 @@ button:hover {
         <div class="form-group">
             <label for="work_type">Work_type</label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Required Field" ControlToValidate="TextBox1" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox1" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="invalid work type" ControlToValidate="TextBox1" ValidationExpression="^[a-zA-Z][a-zA-Z\\s]+$" ForeColor="Red"></asp:RegularExpressionValidator>
         </div>
         <div class="form-group">
@@ -115,6 +115,12 @@ button:hover {
          <label for="Email">Email ID</label>
          <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
          <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox3" ForeColor="Red"></asp:RequiredFieldValidator>
+     </div>
+         <div class="form-group">
+         <label for="price">Price</label>
+             <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox9" ForeColor="Red"></asp:RequiredFieldValidator>
+             <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="Invalid Price" ControlToValidate="TextBox9" ForeColor="Red" ValidationExpression="^[0-9]$"></asp:RegularExpressionValidator>
      </div>
         <div class="form-group">
             <label for="location">Work Location</label>

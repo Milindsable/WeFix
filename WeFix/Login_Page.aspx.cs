@@ -11,7 +11,7 @@ namespace WeFix
     public partial class Login_Page : System.Web.UI.Page
     {
         MySqlConnection con;
-        MySqlCommand cmd;
+        MySqlCommand cmo;
         string str;
         protected void Page_Load(object sender, EventArgs e)
         {
