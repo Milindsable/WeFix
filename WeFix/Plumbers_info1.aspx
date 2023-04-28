@@ -61,86 +61,22 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<div style="margin-top:50px;">
+    <asp:GridView ID="GridView1" runat="server" HorizontalAlign="Center"  Width="1100px" Height="126px" CellPadding="10" CellSpacing="10" ShowHeaderWhenEmpty="True" BackColor="#F6F6F6" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" ForeColor="Black">
+        <Columns>
+            <asp:ButtonField Text="appointment" >
+            <ControlStyle BorderColor="#003300" ForeColor="#CC3300" Width="60px" />
+            </asp:ButtonField>
+        </Columns>
+       
 
-     <h1>Plumbers</h1>
-<div class="product-container">
-  <div class="product-item">
-    <img src="../image/workers_img/plumber.jpg" alt="Product 1">
-    <div class="product-info">
-      <h3>Ramesh</h3>
-      <p>Charges: Rs.200</p>
-      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Ratings: 4 star</p>
-      <p>spcialization: aljd lsjdf lsdjf lakjs</p>
-      <button class="product-btn">View Details</button>
-    </div>
-  </div>
-  <div class="product-item">
-    <img src="../image/workers_img/plumber.jpg" alt="Product 2">
-    <div class="product-info">
-      <h3>Ram</h3>
-      <p>Price: Rs.400</p>
-      <p>Description: Pellentesque suscipit magna id quam rhoncus.</p>
-      <p>Ratings: 4 star</p>
-      <p>spcialization: aljd lsjdf lsdjf lakjs</p>
-      <button class="product-btn">View Details</button>
-    </div>
-  </div>
-    <div class="product-item">
-    <img src="../image/workers_img/plumber.jpg" alt="Product 2">
-    <div class="product-info">
-      <h3>Kishor</h3>
-      <p>Price: Rs.300</p>
-      <p>Description: Pellentesque suscipit magna id quam rhoncus.</p>
-      <p>Ratings: 4 star</p>
-      <p>spcialization: aljd lsjdf lsdjf lakjs</p>
-      <button class="product-btn">View Details</button>
-    </div>
-  </div>
-    <div class="product-item">
-    <img src="../image/workers_img/plumber.jpg" alt="Product 2">
-    <div class="product-info">
-      <h3>Shyam</h3>
-      <p>Price: Rs.350</p>
-      <p>Description: Pellentesque suscipit magna id quam rhoncus.</p>
-      <p>Ratings: 4 star</p>
-      <p>spcialization: aljd lsjdf lsdjf lakjs</p>
-      <button class="product-btn">View Details</button>
-    </div>
-  </div>
-    <div class="product-item">
-    <img src="../image/workers_img/plumber.jpg" alt="Product 2">
-    <div class="product-info">
-      <h3>Suresh</h3>
-      <p>Price: Rs.450</p>
-      <p>Description: Pellentesque suscipit magna id quam rhoncus.</p>
-       <p>Ratings: 4 star</p>
-        <p>spcialization: aljd lsjdf lsdjf lakjs</p>
-      <button class="product-btn">View Details</button>
-    </div>
-  </div>
-    <div class="product-item">
-    <img src="../image/workers_img/plumber.jpg" alt="Product 2">
-    <div class="product-info">
-      <h3>Sanket</h3>
-      <p>Price: Rs.550</p>
-      <p>Description: Pellentesque suscipit magna id quam rhoncus.</p>
-         <p>Ratings: 4 star</p>
-        <p>spcialization: aljd lsjdf lsdjf lakjs</p>
-      <button class="product-btn">View Details</button>
-    </div>
-  </div>
-    <div class="product-item">
-    <img src="../image/workers_img/plumber.jpg" alt="Product 2">
-    <div class="product-info">
-      <h3>Karan</h3>
-      <p>Price: Rs.600</p>
-      <p>Description: Pellentesque suscipit magna id quam rhoncus.</p>
-         <p>Ratings: 4 star</p>
-        <p>spcialization: aljd lsjdf lsdjf lakjs</p>
-      <button class="product-btn">View Details</button>
-    </div>
-  </div>
+        <EditRowStyle BackColor="#C4BBF0" BorderStyle="Solid" BorderWidth="2px" />
+        <HeaderStyle BackColor="#B030B0" BorderStyle="Solid" BorderWidth="2px" ForeColor="#F9FBFC" />
+        <PagerStyle BackColor="#FF0066" />
+        <RowStyle BorderStyle="Solid" BorderWidth="2px" />
+        <SelectedRowStyle BorderStyle="Solid" BorderWidth="2px" />
+       
+
+    </asp:GridView>
 </div>
-
 </asp:Content>

@@ -102,8 +102,27 @@ namespace WeFix
                 }
 
             }
+            else if (DropDownList1.SelectedItem.Value == "Admin")
+            {
 
+                    string inputUsername = "admin";
+                    string inputPassword = "admin";
+                    string username = TextBox1.Text;
+                    string password = TextBox2.Text;
+
+                    if (inputUsername == username && inputPassword == password)
+                    {
+                        Response.Redirect("adminHome.aspx");
+                        ScriptManager.RegisterStartupScript(this, GetType(), "LoginSuccess", "alert('Login successful!');", true);
+
+                    }
+                    else
+                    {
+                        ScriptManager.RegisterStartupScript(this, GetType(), "LoginFailed", "alert('Invalid username or password.');", true);
+                    }
+                }
+
+            }
         }
 
     }
-}
