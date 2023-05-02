@@ -1,6 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="Plumbers_info1.aspx.cs" Inherits="WeFix.Plumbers_info1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="painter_info.aspx.cs" Inherits="WeFix.painter_info" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="margin-top:50px;">

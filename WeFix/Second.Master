@@ -166,10 +166,10 @@ a:hover {
   <div class="subnav">
     <button class="subnavbtn">Workers <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#bring">Painter</a>
-      <a href="#deliver">Carpanter</a>
-      <a href="#package">Mason</a>
-      <a href="#deliver">Electrician</a>
+      <a href="painter_info.aspx">Painter</a>
+      <a href="carpenter_info.aspx">Carpanter</a>
+      <a href="mason_info.aspx">Mason</a>
+      <a href="electrician_info.aspx">Electrician</a>
         <a href="plumbers_info1.aspx">Plumber</a>
       
     </div>

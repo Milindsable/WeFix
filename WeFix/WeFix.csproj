@@ -113,12 +113,16 @@
   <ItemGroup>
     <Content Include="about.aspx" />
     <Content Include="adminHome.aspx" />
+    <Content Include="carpenter_info.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Contractor_home.aspx" />
+    <Content Include="electrician_info.aspx" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
     <Content Include="image\undraw_team_spirit_re_yl1v.svg" />
     <Content Include="image\workers_img\plumber.jpg" />
     <Content Include="Login_Page.aspx" />
+    <Content Include="mason_info.aspx" />
+    <Content Include="painter_info.aspx" />
     <Content Include="Plumbers_info1.aspx" />
     <Content Include="Profile_user.aspx" />
     <Content Include="Registration_Page.aspx" />
@@ -143,6 +147,13 @@
     <Compile Include="adminHome.aspx.designer.cs">
       <DependentUpon>adminHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="carpenter_info.aspx.cs">
+      <DependentUpon>carpenter_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carpenter_info.aspx.designer.cs">
+      <DependentUpon>carpenter_info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,6 +167,13 @@
     </Compile>
     <Compile Include="Contractor_home.aspx.designer.cs">
       <DependentUpon>Contractor_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="electrician_info.aspx.cs">
+      <DependentUpon>electrician_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="electrician_info.aspx.designer.cs">
+      <DependentUpon>electrician_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="first.Master.cs">
       <DependentUpon>first.Master</DependentUpon>
@@ -171,12 +189,26 @@
     <Compile Include="Login_Page.aspx.designer.cs">
       <DependentUpon>Login_Page.aspx</DependentUpon>
     </Compile>
+    <Compile Include="mason_info.aspx.cs">
+      <DependentUpon>mason_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mason_info.aspx.designer.cs">
+      <DependentUpon>mason_info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="masterContractor.Master.cs">
       <DependentUpon>masterContractor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="masterContractor.Master.designer.cs">
       <DependentUpon>masterContractor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="painter_info.aspx.cs">
+      <DependentUpon>painter_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painter_info.aspx.designer.cs">
+      <DependentUpon>painter_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Plumbers_info1.aspx.cs">
       <DependentUpon>Plumbers_info1.aspx</DependentUpon>
