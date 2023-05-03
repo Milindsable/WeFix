@@ -129,6 +129,7 @@
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="WebForm5.aspx" />
     <Content Include="Worker_ho.aspx" />
     <Content Include="Worker_registration.aspx" />
   </ItemGroup>
@@ -260,6 +261,13 @@
     <Compile Include="adminMaster.Master.designer.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Worker_master.Master.cs">
       <DependentUpon>Worker_master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -286,6 +294,9 @@
     <Content Include="first.Master" />
     <Content Include="Second.Master" />
     <Content Include="masterContractor.Master" />
+    <Content Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Worker_master.Master" />
     <Content Include="adminMaster.Master" />

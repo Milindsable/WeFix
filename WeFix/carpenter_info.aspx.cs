@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,8 +17,9 @@ namespace WeFix
         {
             con.Open();
             string sQuery = "SELECT name,work_type,skills,phoneno,email,location from worker where work_type='carpainter'";
-            GridView1.DataSource = getData(sQuery);
-            GridView1.DataBind();
+            MyRepeater.DataSource = getData(sQuery);
+            MyRepeater.DataBind();
+
         }
         private DataTable getData(string sQuery)
         {
@@ -32,24 +34,20 @@ namespace WeFix
             con.Close();
             return dTable;
         }
-        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+
+        protected void GetValue(object sender, EventArgs e)
         {
-            if (e.CommandName == "Appoint")
-            {
-                //Determine the RowIndex of the Row whose Button was clicked.
-                int rowIndex = Convert.ToInt32(e.CommandArgument);
+            //Reference the Repeater Item using Button.
+            RepeaterItem item = (sender as Button).NamingContainer as RepeaterItem;
 
-                //Reference the GridView Row.
-                GridViewRow row = GridView1.Rows[rowIndex];
-                string name = row.Cells[2].Text;
-                //Fetch value of Name.
-                //string name = (row.FindControl("txtName") as TextBox).Text;
+            //Reference the Label and TextBox.
+            string message = "Name: " + (item.FindControl("lblName") as Label).Text;
+            message += "\\nWork Type: " + (item.FindControl("lblWorktype") as Label).Text;
+            message += "\\nSkills: " + (item.FindControl("lblskills") as Label).Text;
 
-                //Fetch value of Country
-                //string country = row.Cells[1].Text;
-
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Name: " + name, true);
-            }
+            //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + message + "');", true);
+            Session["userdata"] = message;
+            Response.Redirect("WebForm5.aspx");
         }
     }
 }
