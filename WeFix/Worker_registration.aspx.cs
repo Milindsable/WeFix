@@ -24,7 +24,7 @@ namespace WeFix
         {
             if (RadioButtonList1.SelectedValue == "Worker")
             {
-                str = "insert into worker(name,work_type,skills,phoneno,email,location,password)  values ('" + TextBox5.Text + "','" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox6.Text.ToString() + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox7.Text + "')";
+                str = "insert into worker(name,work_type,skills,phoneno,email,location,password,price)  values ('" + TextBox5.Text + "','" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox6.Text.ToString() + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox7.Text + "','"+TextBox9.Text+"')";
                 cmd = new MySqlCommand(str, con);
                 cmd.ExecuteNonQuery();
                 ScriptManager.RegisterStartupScript(this, GetType(), "RegistrationSuccess", "alert('Registration successful!');", true);
@@ -32,7 +32,7 @@ namespace WeFix
             }
             else 
             {
-                str = "insert into contractor(name,work_type,skills,phoneno,email,location,password)  values ('" + TextBox5.Text + "','" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox6.Text.ToString() + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox7.Text + "')";
+                str = "insert into contractor(name,work_type,skills,phoneno,email,location,password,price)  values ('" + TextBox5.Text + "','" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox6.Text.ToString() + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox7.Text + "','"+TextBox9.Text+"')";
                 cmd = new MySqlCommand(str, con);
                 cmd.ExecuteNonQuery();
                 ScriptManager.RegisterStartupScript(this, GetType(), "RegistrationSuccess", "alert('Registration successful!');", true);
