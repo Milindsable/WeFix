@@ -12,29 +12,13 @@ namespace WeFix
 {
     public partial class carpenter_info : System.Web.UI.Page
     {
-        MySqlConnection con = new MySqlConnection("Data Source = localhost; Database=;User ID = root; Password=nikita");
+        Second ob = new Second();
         protected void Page_Load(object sender, EventArgs e)
         {
-            con.Open();
             string sQuery = "SELECT name,work_type,skills,phoneno,email,location from worker where work_type='carpainter'";
-            MyRepeater.DataSource = getData(sQuery);
+            MyRepeater.DataSource = ob.getData(sQuery);
             MyRepeater.DataBind();
-
         }
-        private DataTable getData(string sQuery)
-        {
-            MySqlDataAdapter sdt = new MySqlDataAdapter();
-            DataTable dTable = new DataTable();
-
-            con = new MySqlConnection("Data Source=localhost;Database=wefix;User ID = root; Password = nikita");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand(sQuery, con);
-            sdt.SelectCommand = cmd;
-            sdt.Fill(dTable);
-            con.Close();
-            return dTable;
-        }
-
         protected void GetValue(object sender, EventArgs e)
         {
             //Reference the Repeater Item using Button.

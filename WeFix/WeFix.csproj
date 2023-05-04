@@ -117,6 +117,7 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="Contractor_home.aspx" />
     <Content Include="electrician_info.aspx" />
+    <Content Include="image\painter.jpg" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
     <Content Include="image\undraw_team_spirit_re_yl1v.svg" />
     <Content Include="image\workers_img\plumber.jpg" />
