@@ -183,7 +183,7 @@ a:hover {
     </div>
   </div >
             <div>
-  <a style="margin-left:600px;color:white;" href="Intro.aspx">Logout</a>
+                <asp:Button ID="Button1" runat="server" OnClick="logout" Text="Logout" />
 
    </div>
 </div>

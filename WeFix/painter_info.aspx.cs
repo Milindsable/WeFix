@@ -15,7 +15,7 @@ namespace WeFix
         protected void Page_Load(object sender, EventArgs e)
         {
            
-            string sQuery = "SELECT name,work_type,skills,phoneno,email,location from worker where work_type='painter'";
+            string sQuery = "SELECT name,work_type,skills,phoneno,email,location,price from worker where work_type='painter'";
             MyRepeater.DataSource =ob.getData(sQuery);
             MyRepeater.DataBind();
         }

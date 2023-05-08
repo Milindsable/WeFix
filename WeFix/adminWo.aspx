@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="carpenter_info.aspx.cs" Inherits="WeFix.carpenter_info" EnableEventValidation="false" ValidateRequest="false"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/adminMaster.Master" AutoEventWireup="true" CodeBehind="adminWo.aspx.cs" Inherits="WeFix.adminWo"  EnableEventValidation="false" ValidateRequest="false"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
+     <style>
 		table {
 			border-collapse: collapse;
 			width: 90%;
@@ -24,13 +24,13 @@
 	</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
-    <div style="margin-top:50px;">
+	<div style="margin-top:50px;">
     <asp:Repeater runat="server" ID="MyRepeater">
     <HeaderTemplate>
         <table border="1">
             <thead>
             <tr>
+                <th>id</th>
                 <th>Name</th>
                 <th>Work Type</th>
                 <th>Skills</th>
@@ -38,7 +38,7 @@
                 <th>Email</th>
                 <th>Location</th>
                 <th>Price</th>
-                <th>Book Appointment</th>
+                <th>Delete worker</th>
             </tr>
             </thead>
     </HeaderTemplate>
@@ -46,6 +46,9 @@
     <ItemTemplate>
         <tbody>
         <tr>
+              <td>
+               <asp:Label ID="Label1" runat="server" Text='<%# Eval("wid") %>' />
+            </td>
             <td>
                <asp:Label ID="lblName" runat="server" Text='<%# Eval("name") %>' />
             </td>
@@ -68,7 +71,7 @@
                  <asp:Label ID="lblprice" runat="server" Text='<%# Eval("price") %>' />
             </td>
             <td>
-                <asp:Button Text="Appoint" runat="server" OnClick="GetValue" />
+                <asp:Button Text="Delete" runat="server" OnClick="GetValue" />
             </td>
         </tr>
         </tbody>

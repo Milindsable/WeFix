@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -11,12 +12,9 @@ namespace WeFix
     public partial class Login_Page : System.Web.UI.Page
     {
         MySqlConnection con;
-        MySqlCommand cmo;
-        string str;
         protected void Page_Load(object sender, EventArgs e)
         {
             con = new MySqlConnection("Data Source=localhost;Database=wefix;User ID = root; Password = nikita");
-
             Response.Write("connect");
         }
 
@@ -28,10 +26,11 @@ namespace WeFix
                 com.Connection = con;
                 con.Open();
 
-                com.CommandText = ("select username,password from user");
+                com.CommandText = ("select uid,username,password from user");
                 MySqlDataReader read = com.ExecuteReader();
                 while (read.Read())
                 {
+                    int id = (int)read["uid"];
                     string inputUsername = (string)read["username"];
                     string inputPassword = (string)read["password"];
                     string username = TextBox1.Text;
@@ -40,6 +39,8 @@ namespace WeFix
                     if (inputUsername == username && inputPassword == password)
                     {
                         ScriptManager.RegisterStartupScript(this, GetType(), "LoginSuccess", "alert('Login successful!');", true);
+                        Session["username"] = username;
+                        Session["uid"] = id;
                         Response.Redirect("Home.aspx");
                     }
                     else
@@ -102,7 +103,7 @@ namespace WeFix
                 }
 
             }
-            else if (DropDownList1.SelectedItem.Value == "Admin")
+            else
             {
 
                     string inputUsername = "admin";

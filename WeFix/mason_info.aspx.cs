@@ -14,8 +14,11 @@ namespace WeFix
         Second ob = new Second();
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            string sQuery = "SELECT name,work_type,skills,phoneno,email,location from worker where work_type='mason'";
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
+            Response.Cache.SetNoStore();
+
+            string sQuery = "SELECT name,work_type,skills,phoneno,email,location,price from worker where work_type='mason'";
             MyRepeater.DataSource =ob.getData(sQuery);
             MyRepeater.DataBind();
         }

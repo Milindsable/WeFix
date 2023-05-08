@@ -112,13 +112,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
+    <Content Include="adminContractor.aspx" />
     <Content Include="adminHome.aspx" />
+    <Content Include="adminWo.aspx" />
     <Content Include="carpenter_info.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Contractor_home.aspx" />
     <Content Include="electrician_info.aspx" />
     <Content Include="image\painter.jpg" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
+    <Content Include="image\undraw_pic_profile_re_7g2h.svg" />
+    <Content Include="image\undraw_quitting_time_re_1whp.svg" />
     <Content Include="image\undraw_team_spirit_re_yl1v.svg" />
     <Content Include="image\workers_img\plumber.jpg" />
     <Content Include="Login_Page.aspx" />
@@ -130,7 +134,7 @@
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="WebForm5.aspx" />
+    <Content Include="Appointment_Page.aspx" />
     <Content Include="Worker_ho.aspx" />
     <Content Include="Worker_registration.aspx" />
   </ItemGroup>
@@ -142,12 +146,26 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
+    <Compile Include="adminContractor.aspx.cs">
+      <DependentUpon>adminContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminContractor.aspx.designer.cs">
+      <DependentUpon>adminContractor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminHome.aspx.cs">
       <DependentUpon>adminHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminHome.aspx.designer.cs">
       <DependentUpon>adminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminWo.aspx.cs">
+      <DependentUpon>adminWo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminWo.aspx.designer.cs">
+      <DependentUpon>adminWo.aspx</DependentUpon>
     </Compile>
     <Compile Include="carpenter_info.aspx.cs">
       <DependentUpon>carpenter_info.aspx</DependentUpon>
@@ -262,12 +280,12 @@
     <Compile Include="adminMaster.Master.designer.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebForm5.aspx.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
+    <Compile Include="Appointment_Page.aspx.cs">
+      <DependentUpon>Appointment_Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm5.aspx.designer.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
+    <Compile Include="Appointment_Page.aspx.designer.cs">
+      <DependentUpon>Appointment_Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worker_master.Master.cs">
       <DependentUpon>Worker_master.Master</DependentUpon>

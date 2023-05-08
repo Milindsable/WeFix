@@ -6,10 +6,10 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			height: 100vh;
-		}
+		
+			}
 		.profile-card {
-			background-color: #fff;
+			background-color: #ACB1D6;
 			border-radius: 10px;
 			box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 			display: flex;
@@ -18,6 +18,8 @@
 			padding: 30px;
 			width: 90%;
 			max-width: 600px;
+			margin-top:100px;
+			margin-bottom:50px;
 		}
 		.profile-image {
 			border-radius: 50%;
@@ -64,11 +66,10 @@
 
     <div class="container1">
 		<div class="profile-card">
-			<img class="profile-image" src="https://i.pravatar.cc/150?img=3" alt="Profile Image">
-			<h1 class="profile-name">John Doe</h1>
-			<h2 class="profile-job">Web Developer</h2>
-			<p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lacus euismod, rutrum eros eu, aliquet mi. Vestibulum tincidunt est sed velit lobortis, vel efficitur eros dictum. Ut gravida iaculis purus, vitae mollis lectus dapibus vel.</p>
-			<a class="profile-button" href="#">Contact Me</a>
-		</div>
+			<img class="profile-image" src="image/undraw_pic_profile_re_7g2h.svg" alt="Profile Image">
+			<asp:DetailsView ID="DetailsView1" runat="server" Height="64px" Width="1202px" BorderColor="#ACB1D6" BorderStyle="None" BorderWidth="0px" CellPadding="5" CellSpacing="100" CssClass="container1" Font-Bold="True" Font-Names="Century Gothic">
+	
+			</asp:DetailsView>
+			</div>
 	</div>
 </asp:Content>

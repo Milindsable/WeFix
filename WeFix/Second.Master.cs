@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
@@ -28,6 +29,12 @@ namespace WeFix
             sdt.Fill(dTable);
             con.Close();
             return dTable;
+        }
+
+        protected void logout(object sender, EventArgs e)
+        {
+            Session.Remove("username");
+            Response.Redirect("Login_Page.aspx");
         }
     }
 }

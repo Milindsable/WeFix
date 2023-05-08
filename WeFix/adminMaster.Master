@@ -31,6 +31,7 @@
 .subnav {
   float: left;
   overflow: hidden;
+  height:45px;
 }
 
 .subnav .subnavbtn {
@@ -53,7 +54,7 @@
   position: absolute;
   left: 0;
   background-color:#892CDC;
-  width: 100%;
+  width: 70%;
   z-index: 1;
 }
 
@@ -144,9 +145,9 @@ a:hover {
             </div>
             <nav class="site-navigation">
                 <ul class="nav">
-                    <li><a href="Home.aspx">Home</a></li>
-                    <li><a href="about.aspx">About</a></li>
-                    <li><a href="ContactUs.aspx">Contact</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -155,30 +156,18 @@ a:hover {
  
             
   <div class="subnav">
-    <button class="subnavbtn">Contractors<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#company">Construction</a>
-      <a href="#team">Painting</a>
-      <a href="#careers">Furniture</a>
-      <a href="#">Electrical</a>
-    </div>
+   <a href="adminContractor.aspx">Contractors</a>
+    
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">Workers <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#bring">Painter</a>
-      <a href="#deliver">Carpanter</a>
-      <a href="#package">Mason</a>
-      <a href="#deliver">Electrician</a>
-        <a href="plumbers_info1.aspx">Plumber</a>
-      
-    </div>
+    <a href="adminWo.aspx">Workers</a>
+   
   </div> 
  
  
   
- <div>
-  <a style="margin-left:850px;color:white;" href="Intro.aspx">Logout</a>
+ <div class="subnav">
+  <a  style="margin-left:800px;" href="Intro.aspx">Logout</a>
 
    </div>
 </div>

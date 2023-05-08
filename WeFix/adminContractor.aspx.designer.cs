@@ -11,16 +11,16 @@ namespace WeFix
 {
 
 
-    public partial class Profile_user
+    public partial class adminContractor
     {
 
         /// <summary>
-        /// DetailsView1 control.
+        /// MyRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
+        protected global::System.Web.UI.WebControls.Repeater MyRepeater;
     }
 }

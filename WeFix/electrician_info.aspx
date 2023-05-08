@@ -36,6 +36,7 @@
                 <th>Phone Number</th>
                 <th>Email</th>
                 <th>Location</th>
+                <th>Price</th>
                 <th>Book Appointment</th>
             </tr>
             </thead>
@@ -61,6 +62,9 @@
             </td>
             <td>
                  <asp:Label ID="lbllocation" runat="server" Text='<%# Eval("location") %>' />
+            </td>
+             <td>
+                 <asp:Label ID="lblprice" runat="server" Text='<%# Eval("price") %>' />
             </td>
             <td>
                 <asp:Button Text="Appoint" runat="server" OnClick="GetValue" />
