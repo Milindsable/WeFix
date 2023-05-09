@@ -27,13 +27,18 @@ namespace WeFix
             RepeaterItem item = (sender as Button).NamingContainer as RepeaterItem;
 
             //Reference the Label and TextBox.
-            string message = "Name: " + (item.FindControl("lblName") as Label).Text;
-            message += "\\nWork Type: " + (item.FindControl("lblWorktype") as Label).Text;
-            message += "\\nSkills: " + (item.FindControl("lblskills") as Label).Text;
-
+            string phone = (item.FindControl("lblphoneno") as Label).Text;
+            string name = (item.FindControl("lblName") as Label).Text;
+            string work = (item.FindControl("lblWorktype") as Label).Text;
+            string skill = (item.FindControl("lblskills") as Label).Text;
+            string location = (item.FindControl("lbllocation") as Label).Text;
             //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + message + "');", true);
-            Session["userdata"] = message;
-            Response.Redirect("WebForm5.aspx");
+            Session["wname"] = name;
+            Session["workt"] = work;
+            Session["skill"] = skill;
+            Session["location"] = location;
+            Session["phone"] = phone;
+            Response.Redirect("Appointment_Page.aspx");
         }
     }
 }

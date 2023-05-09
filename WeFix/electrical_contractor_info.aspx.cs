@@ -1,25 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using MySql.Data;
-using MySql.Data.MySqlClient;
 
 namespace WeFix
 {
-    public partial class Plumbers_info1 : System.Web.UI.Page
+    public partial class electrical_contractor_info : System.Web.UI.Page
     {
         Second ob = new Second();
         protected void Page_Load(object sender, EventArgs e)
         {
-           string sQuery = "SELECT name,work_type,skills,phoneno,email,location,price from worker where work_type='plumber'";
-           MyRepeater.DataSource = ob.getData(sQuery);
-           MyRepeater.DataBind();
+            string sQuery = "SELECT name,work_type,skills,phoneno,email,location,price from contractor where work_type='Electrical'";
+            MyRepeater.DataSource = ob.getData(sQuery);
+            MyRepeater.DataBind();
         }
-
         protected void GetValue(object sender, EventArgs e)
         {
             //Reference the Repeater Item using Button.
@@ -32,12 +28,12 @@ namespace WeFix
             string skill = (item.FindControl("lblskills") as Label).Text;
             string location = (item.FindControl("lbllocation") as Label).Text;
             //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + message + "');", true);
-            Session["wname"] = name;
+            Session["contName"] = name;
             Session["workt"] = work;
             Session["skill"] = skill;
             Session["location"] = location;
             Session["phone"] = phone;
-            Response.Redirect("Appointment_Page.aspx");
+            Response.Redirect("Contractor_appointment.aspx");
         }
     }
 }

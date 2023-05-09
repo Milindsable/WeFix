@@ -157,10 +157,10 @@ a:hover {
   <div class="subnav">
     <button class="subnavbtn">Contractors<i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#company">Construction</a>
-      <a href="#team">Painting</a>
-      <a href="#careers">Furniture</a>
-      <a href="#">Electrical</a>
+      <a href="construction_contractor_info.aspx">Construction</a>
+      <a href="painter_contractor_info.aspx">Painting</a>
+      <a href="furniture_contractor_info.aspx">Furniture</a>
+      <a href="electrical_contractor_info.aspx">Electrical</a>
     </div>
   </div> 
   <div class="subnav">

@@ -117,8 +117,12 @@
     <Content Include="adminWo.aspx" />
     <Content Include="carpenter_info.aspx" />
     <Content Include="ContactUs.aspx" />
+    <Content Include="construction_contractor_info.aspx" />
+    <Content Include="Contractor_appointment.aspx" />
     <Content Include="Contractor_home.aspx" />
+    <Content Include="electrical_contractor_info.aspx" />
     <Content Include="electrician_info.aspx" />
+    <Content Include="furniture_contractor_info.aspx" />
     <Content Include="image\painter.jpg" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
     <Content Include="image\undraw_pic_profile_re_7g2h.svg" />
@@ -127,6 +131,7 @@
     <Content Include="image\workers_img\plumber.jpg" />
     <Content Include="Login_Page.aspx" />
     <Content Include="mason_info.aspx" />
+    <Content Include="painter_contractor_info.aspx" />
     <Content Include="painter_info.aspx" />
     <Content Include="Plumbers_info1.aspx" />
     <Content Include="Profile_user.aspx" />
@@ -181,12 +186,33 @@
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="construction_contractor_info.aspx.cs">
+      <DependentUpon>construction_contractor_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="construction_contractor_info.aspx.designer.cs">
+      <DependentUpon>construction_contractor_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contractor_appointment.aspx.cs">
+      <DependentUpon>Contractor_appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contractor_appointment.aspx.designer.cs">
+      <DependentUpon>Contractor_appointment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contractor_home.aspx.cs">
       <DependentUpon>Contractor_home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contractor_home.aspx.designer.cs">
       <DependentUpon>Contractor_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="electrical_contractor_info.aspx.cs">
+      <DependentUpon>electrical_contractor_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="electrical_contractor_info.aspx.designer.cs">
+      <DependentUpon>electrical_contractor_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="electrician_info.aspx.cs">
       <DependentUpon>electrician_info.aspx</DependentUpon>
@@ -201,6 +227,13 @@
     </Compile>
     <Compile Include="first.Master.designer.cs">
       <DependentUpon>first.Master</DependentUpon>
+    </Compile>
+    <Compile Include="furniture_contractor_info.aspx.cs">
+      <DependentUpon>furniture_contractor_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="furniture_contractor_info.aspx.designer.cs">
+      <DependentUpon>furniture_contractor_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login_Page.aspx.cs">
       <DependentUpon>Login_Page.aspx</DependentUpon>
@@ -222,6 +255,13 @@
     </Compile>
     <Compile Include="masterContractor.Master.designer.cs">
       <DependentUpon>masterContractor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="painter_contractor_info.aspx.cs">
+      <DependentUpon>painter_contractor_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painter_contractor_info.aspx.designer.cs">
+      <DependentUpon>painter_contractor_info.aspx</DependentUpon>
     </Compile>
     <Compile Include="painter_info.aspx.cs">
       <DependentUpon>painter_info.aspx</DependentUpon>

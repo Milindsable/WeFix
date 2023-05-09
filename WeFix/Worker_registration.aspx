@@ -108,7 +108,7 @@ button:hover {
             <div class="form-group">
             <label for="price">Price</label>
                 <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
-                <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox9" ErrorMessage="charges must in between Rs.100 to Rs.100000" ForeColor="Red" MaximumValue="100000" MinimumValue="100" Type="Integer"></asp:RangeValidator>
+                <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox9" ErrorMessage="charges must in between Rs.100 to Rs.100000" ForeColor="Red" MaximumValue="1000000" MinimumValue="100" Type="Integer"></asp:RangeValidator>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox9" ErrorMessage="*fill this field" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
     <div class="form-group">
