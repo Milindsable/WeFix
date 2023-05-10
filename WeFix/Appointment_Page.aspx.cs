@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -37,20 +38,31 @@ namespace WeFix
         {
             DateTime dt = Calendar1.SelectedDate;
             DateTime cdt = DateTime.UtcNow.Date;
+            int uid = (int)Session["uid"];
 
-            if (dt < cdt)
+            string str = "SELECT COUNT(*) FROM appointment where Userid='"+uid+"' AND date='"+ dt.ToString("yyyy/MM/dd") + "'";
+            //select count(*) from wefix.appointment where Userid = 6 AND date = '2023-05-19';
+            cmd = new MySqlCommand(str, con);
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+            if (count > 1)
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "DateSelection", "alert('Cant select past dates !!!');", true);
+                ScriptManager.RegisterStartupScript(this, GetType(), "", "alert('you cant appoint more than 2 workers for same date!!!');", true);
             }
-            else
-            {
-
-                int uid = (int)Session["uid"];
-                str = "insert into appointment(Userid,workerid,wname,wtype,skills,location,date)  values ('" + uid + "','" + TextBox2.Text.ToString() + "','" + TextBox1.Text.ToString() + "','" + TextBox3.Text.ToString() + "','" + TextBox4.Text.ToString() + "','" + TextBox5.Text.ToString() + "','" + dt.ToString("yyyy/MM/dd") + "')";
-                cmd = new MySqlCommand(str, con);
-                cmd.ExecuteNonQuery();
-                ScriptManager.RegisterStartupScript(this, GetType(), "AppointmentSuccess", "alert('appointment booked!');", true);
-                con.Close();
+            else 
+            { 
+                    if (dt < cdt)
+                    {
+                        ScriptManager.RegisterStartupScript(this, GetType(), "DateSelection", "alert('Cant select past dates !!!');", true);
+                    }
+                    else
+                    {
+                        str = "insert into appointment(Userid,workerid,wname,wtype,skills,location,date)  values ('" + uid + "','" + TextBox2.Text.ToString() + "','" + TextBox1.Text.ToString() + "','" + TextBox3.Text.ToString() + "','" + TextBox4.Text.ToString() + "','" + TextBox5.Text.ToString() + "','" + dt.ToString("yyyy/MM/dd") + "')";
+                        cmd = new MySqlCommand(str, con);
+                        cmd.ExecuteNonQuery();
+                        ScriptManager.RegisterStartupScript(this, GetType(), "AppointmentSuccess", "alert('appointment booked!');", true);
+                        con.Close();
+                    }
             }
         }
     }

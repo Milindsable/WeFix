@@ -134,7 +134,9 @@
     <Content Include="painter_contractor_info.aspx" />
     <Content Include="painter_info.aspx" />
     <Content Include="Plumbers_info1.aspx" />
+    <Content Include="Profile_contractor.aspx" />
     <Content Include="Profile_user.aspx" />
+    <Content Include="Profile_worker.aspx" />
     <Content Include="Registration_Page.aspx" />
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
@@ -277,12 +279,26 @@
     <Compile Include="Plumbers_info1.aspx.designer.cs">
       <DependentUpon>Plumbers_info1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Profile_contractor.aspx.cs">
+      <DependentUpon>Profile_contractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile_contractor.aspx.designer.cs">
+      <DependentUpon>Profile_contractor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Profile_user.aspx.cs">
       <DependentUpon>Profile_user.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Profile_user.aspx.designer.cs">
       <DependentUpon>Profile_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile_worker.aspx.cs">
+      <DependentUpon>Profile_worker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile_worker.aspx.designer.cs">
+      <DependentUpon>Profile_worker.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Intro.aspx.cs">

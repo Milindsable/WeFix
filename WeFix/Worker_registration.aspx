@@ -90,10 +90,10 @@ button:hover {
              </asp:RadioButtonList>
         </div>
         <div class="form-group">
-           <label for="name">Name</label>
+           <label for="name">Username</label>
             <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox5" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="invalid name" ControlToValidate="TextBox5" ForeColor="Red" ValidationExpression="^[a-zA-Z][a-zA-Z\\s]+$"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="invalid name" ControlToValidate="TextBox5" ForeColor="Red" ValidationExpression="^[A-Za-z][A-Za-z0-9_@#$*]{7,29}$"></asp:RegularExpressionValidator>
         </div>
         <div class="form-group">
             <label for="work_type">Work_type</label>

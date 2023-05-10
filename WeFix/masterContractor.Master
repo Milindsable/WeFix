@@ -152,7 +152,7 @@ a:hover {
         </header>
         <div class="navbar">
            
-  <a style="color:white;" href="Profile_user.aspx">Profile</a>
+  <a style="color:white;" href="Profile_contractor.aspx">Profile</a>
             
  
   <div class="subnav">
