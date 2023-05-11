@@ -16,11 +16,14 @@ namespace WeFix
             Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
             Response.Cache.SetNoStore();
 
-            string sQuery = "SELECT name,work_type,skills,phoneno,email,location,price from worker where work_type='mason'";
+            int id = (int)Session["uid"];
+            string date = DateTime.UtcNow.ToString("yyyy-MM-dd");
+
+            string sQuery = "SELECT workerid,wname,wtype,skills,location,date from appointment where Userid='"+id+"' AND date<'"+date+"'";
             MyRepeater.DataSource = ob.getData(sQuery);
             MyRepeater.DataBind();
         }
-        protected void GetValue(object sender, EventArgs e)
+       /* protected void GetValue(object sender, EventArgs e)
         {
             //Reference the Repeater Item using Button.
             RepeaterItem item = (sender as Button).NamingContainer as RepeaterItem;
@@ -38,6 +41,6 @@ namespace WeFix
             Session["location"] = location;
             Session["phone"] = phone;
             Response.Redirect("Appointment_Page.aspx");
-        }
+        }*/
     }
 }

@@ -31,14 +31,12 @@
         <table border="1">
             <thead>
             <tr>
+                <th>Worker ID</th>
                 <th>Name</th>
                 <th>Work Type</th>
                 <th>Skills</th>
-                <th>Phone Number</th>
-                <th>Email</th>
                 <th>Location</th>
-                <th>Price</th>
-                <th>Book Appointment</th>
+                <th>Date</th>
             </tr>
             </thead>
     </HeaderTemplate>
@@ -47,28 +45,22 @@
         <tbody>
         <tr>
             <td>
-               <asp:Label ID="lblName" runat="server" Text='<%# Eval("name") %>' />
+               <asp:Label ID="lblid" runat="server" Text='<%# Eval("workerid") %>' />
             </td>
             <td>
-                <asp:Label ID="lblWorktype" runat="server" Text='<%# Eval("work_type") %>' />
+                <asp:Label ID="lblWname" runat="server" Text='<%# Eval("wname") %>' />
+            </td>
+            <td>
+                <asp:Label ID="lblwtype" runat="server" Text='<%# Eval("wtype") %>' />
             </td>
             <td>
                 <asp:Label ID="lblskills" runat="server" Text='<%# Eval("skills") %>' />
             </td>
             <td>
-                <asp:Label ID="lblphoneno" runat="server" Text='<%# Eval("phoneno") %>' />
-            </td>
-            <td>
-                 <asp:Label ID="lblemail" runat="server" Text='<%# Eval("email") %>' />
-            </td>
-            <td>
                  <asp:Label ID="lbllocation" runat="server" Text='<%# Eval("location") %>' />
             </td>
-             <td>
-                 <asp:Label ID="lblprice" runat="server" Text='<%# Eval("price") %>' />
-            </td>
             <td>
-                <asp:Button Text="Appoint" runat="server" OnClick="GetValue" />
+                 <asp:Label ID="lbldate" runat="server" Text='<%# Eval("date") %>' />
             </td>
         </tr>
         </tbody>
@@ -77,4 +69,5 @@
         </table>
     </FooterTemplate>
 </asp:Repeater>
+        </div>
 </asp:Content>
