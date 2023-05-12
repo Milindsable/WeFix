@@ -44,9 +44,9 @@ namespace WeFix
             string str="delete from worker where wid='"+id+"'";
             MySqlCommand cmd = new MySqlCommand(str, con);
             cmd.ExecuteNonQuery();
-            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" +id+ "');", true);
-           // Session["userdata"] = id;
-           // Response.Redirect("WebForm5.aspx");
+            ScriptManager.RegisterStartupScript(this, GetType(), "alert", "alert('Worker deleted successfully with id="+id+"!!');", true);
+            // Session["userdata"] = id;
+            // Response.Redirect("WebForm5.aspx");
         }
 
     }

@@ -44,7 +44,7 @@ namespace WeFix
             string str = "delete from contractor where cid='" + id + "'";
             MySqlCommand cmd = new MySqlCommand(str, con);
             cmd.ExecuteNonQuery();
-            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('" + id + "');", true);
+            ScriptManager.RegisterStartupScript(this, GetType(), "alert", "alert('Contractor deleted successfully with id=" + id + "!!');", true);
             // Session["userdata"] = id;
             // Response.Redirect("WebForm5.aspx");
         }

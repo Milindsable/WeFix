@@ -138,11 +138,13 @@
     <Content Include="Profile_user.aspx" />
     <Content Include="Profile_worker.aspx" />
     <Content Include="Registration_Page.aspx" />
+    <Content Include="User_current_appointments.aspx" />
     <Content Include="User_past_appointment.aspx" />
     <Content Include="Web.config" />
     <Content Include="Intro.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Appointment_Page.aspx" />
+    <Content Include="Worker_current_appointment.aspx" />
     <Content Include="Worker_ho.aspx" />
     <Content Include="Worker_registration.aspx" />
   </ItemGroup>
@@ -344,12 +346,26 @@
     <Compile Include="Appointment_Page.aspx.designer.cs">
       <DependentUpon>Appointment_Page.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User_current_appointments.aspx.cs">
+      <DependentUpon>User_current_appointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_current_appointments.aspx.designer.cs">
+      <DependentUpon>User_current_appointments.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User_past_appointment.aspx.cs">
       <DependentUpon>User_past_appointment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User_past_appointment.aspx.designer.cs">
       <DependentUpon>User_past_appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worker_current_appointment.aspx.cs">
+      <DependentUpon>Worker_current_appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worker_current_appointment.aspx.designer.cs">
+      <DependentUpon>Worker_current_appointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worker_master.Master.cs">
       <DependentUpon>Worker_master.Master</DependentUpon>
