@@ -22,7 +22,7 @@ namespace WeFix
             protected void Button1_Click(object sender, EventArgs e)
             {
                
-                str = "insert into user(username,mobileno,password)  values ('" + TextBox1.Text.ToString() + "','"+ TextBox2.Text.ToString() + "','" + TextBox3.Text.ToString() + "')";
+                str = "insert into user(username,mobileno,password,location,email)  values ('" + TextBox1.Text.ToString() + "','"+ TextBox2.Text.ToString() + "','" + TextBox3.Text.ToString() + "','"+ TextBox6.Text.ToString()+"','"+ TextBox5.Text.ToString()+"')";
                 cmd = new MySqlCommand(str, con);
                 cmd.ExecuteNonQuery();
                 ScriptManager.RegisterStartupScript(this, GetType(), "RegistrationSuccess", "alert('Registration successful!');", true);

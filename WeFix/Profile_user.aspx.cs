@@ -22,7 +22,7 @@ namespace WeFix
 
             con.Open();
             int id = (int)Session["uid"];
-            string sQuery = "SELECT username,mobileno from user where uid='" + id + "'";
+            string sQuery = "SELECT username,mobileno,location,email from user where uid='" + id +"'";
             MySqlDataAdapter sdt = new MySqlDataAdapter();
             DataSet ds = new DataSet();
 

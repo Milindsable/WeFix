@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Worker_master.Master" AutoEventWireup="true" CodeBehind="Worker_current_appointment.aspx.cs" Inherits="WeFix.Worker_current_appointment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Worker_master.Master" AutoEventWireup="true" CodeBehind="worker_past.aspx.cs" Inherits="WeFix.worker_past" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-      <style>
+     <style>
 		table {
 			 border-collapse: collapse;
 			 width: 90%;
@@ -36,7 +36,7 @@
                 <th>Location</th>
                 <th>Email</th>
                 <th>Date</th>
-                <th>Delete Appointments</th>
+                
             </tr>
             </thead>
     </HeaderTemplate>
@@ -60,9 +60,7 @@
                  <asp:Label ID="lbldate" runat="server" Text='<%# Eval("date") %>' />
             </td>
             
-         <td>
-                <asp:Button ID="Button1" runat="server" Text="Delete"  />
-            </td>       
+           
         </tr>
         </tbody>
     </ItemTemplate>

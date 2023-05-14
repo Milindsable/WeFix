@@ -11,7 +11,7 @@ namespace WeFix
 {
 
 
-    public partial class Worker_current_appointment
+    public partial class worker_past
     {
 
         /// <summary>

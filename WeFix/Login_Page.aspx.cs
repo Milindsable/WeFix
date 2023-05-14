@@ -26,11 +26,14 @@ namespace WeFix
                 com.Connection = con;
                 con.Open();
 
-                com.CommandText = ("select uid,username,password from user");
+                com.CommandText = ("select uid,username,mobileno,password,location,email from user");
                 MySqlDataReader read = com.ExecuteReader();
                 while (read.Read())
                 {
                     int id = (int)read["uid"];
+                    string phone = (string)read["mobileno"];
+                    string location =(string)read["location"];
+                    string email = (string)read["email"];
                     string inputUsername = (string)read["username"];
                     string inputPassword = (string)read["password"];
                     string username = TextBox1.Text;
@@ -41,6 +44,9 @@ namespace WeFix
                         ScriptManager.RegisterStartupScript(this, GetType(), "LoginSuccess", "alert('Login successful!');", true);
                         Session["username"] = username;
                         Session["uid"] = id;
+                        Session["phone"] = phone;
+                        Session["email"] = email;
+                        Session["locationU"] = location;
                         Response.Redirect("Home.aspx");
                     }
                     else

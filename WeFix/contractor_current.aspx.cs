@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WeFix
 {
-    public partial class Worker_current_appointment : System.Web.UI.Page
+    public partial class contractor_current : System.Web.UI.Page
     {
         Second ob = new Second();
         protected void Page_Load(object sender, EventArgs e)
@@ -16,11 +16,9 @@ namespace WeFix
             Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1));
             Response.Cache.SetNoStore();
 
-            int id = (int)Session["wid"];
+            int id = (int)Session["cid"];
             string date = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
-
-            //string sQuery = "SELECT workerid,wname,wtype,skills,location,date from appointment where Userid='" + id + "' AND date>'" + date + "'";
-            string sQuery = "SELECT Userid,username,mobileU,locationU,emailU,date from appointment where workerid='" + id + "'AND date>'" + date + "'";
+            string sQuery = "SELECT Userid,username,mobileU,locationU,emailU,date from appointment_contractor where contid='" + id + "' AND date>'" + date + "'";
             MyRepeater.DataSource = ob.getData(sQuery);
             MyRepeater.DataBind();
         }

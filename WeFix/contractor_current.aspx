@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Worker_master.Master" AutoEventWireup="true" CodeBehind="Worker_current_appointment.aspx.cs" Inherits="WeFix.Worker_current_appointment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterContractor.Master" AutoEventWireup="true" CodeBehind="contractor_current.aspx.cs" Inherits="WeFix.contractor_current" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-      <style>
+     <style>
 		table {
 			 border-collapse: collapse;
 			 width: 90%;

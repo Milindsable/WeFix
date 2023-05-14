@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Worker_master.Master" AutoEventWireup="true" CodeBehind="Worker_current_appointment.aspx.cs" Inherits="WeFix.Worker_current_appointment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterContractor.Master" AutoEventWireup="true" CodeBehind="contractor_past.aspx.cs" Inherits="WeFix.contractor_past" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-      <style>
+     <style>
 		table {
 			 border-collapse: collapse;
 			 width: 90%;
@@ -23,6 +23,7 @@
 		
 			 }
 	</style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 	<div style="margin-top:50px;">
@@ -71,4 +72,5 @@
     </FooterTemplate>
 </asp:Repeater>
         </div>
+
 </asp:Content>

@@ -162,8 +162,8 @@ a:hover {
   <div class="subnav">
     <button class="subnavbtn">Appointments <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#link1">Past</a>
-      <a href="#link2">Current</a>
+      <a href="contractor_past.aspx">Past</a>
+      <a href="contractor_current.aspx">Current</a>
       
     </div>
   </div >

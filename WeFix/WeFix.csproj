@@ -119,7 +119,9 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="construction_contractor_info.aspx" />
     <Content Include="Contractor_appointment.aspx" />
+    <Content Include="contractor_current.aspx" />
     <Content Include="Contractor_home.aspx" />
+    <Content Include="contractor_past.aspx" />
     <Content Include="electrical_contractor_info.aspx" />
     <Content Include="electrician_info.aspx" />
     <Content Include="furniture_contractor_info.aspx" />
@@ -146,6 +148,7 @@
     <Content Include="Appointment_Page.aspx" />
     <Content Include="Worker_current_appointment.aspx" />
     <Content Include="Worker_ho.aspx" />
+    <Content Include="worker_past.aspx" />
     <Content Include="Worker_registration.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -205,12 +208,26 @@
     <Compile Include="Contractor_appointment.aspx.designer.cs">
       <DependentUpon>Contractor_appointment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="contractor_current.aspx.cs">
+      <DependentUpon>contractor_current.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contractor_current.aspx.designer.cs">
+      <DependentUpon>contractor_current.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contractor_home.aspx.cs">
       <DependentUpon>Contractor_home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contractor_home.aspx.designer.cs">
       <DependentUpon>Contractor_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contractor_past.aspx.cs">
+      <DependentUpon>contractor_past.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contractor_past.aspx.designer.cs">
+      <DependentUpon>contractor_past.aspx</DependentUpon>
     </Compile>
     <Compile Include="electrical_contractor_info.aspx.cs">
       <DependentUpon>electrical_contractor_info.aspx</DependentUpon>
@@ -380,6 +397,13 @@
     </Compile>
     <Compile Include="Worker_ho.aspx.designer.cs">
       <DependentUpon>Worker_ho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="worker_past.aspx.cs">
+      <DependentUpon>worker_past.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="worker_past.aspx.designer.cs">
+      <DependentUpon>worker_past.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worker_registration.aspx.cs">
       <DependentUpon>Worker_registration.aspx</DependentUpon>

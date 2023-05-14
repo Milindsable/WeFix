@@ -94,6 +94,16 @@ button:hover {
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter the Mobile no" Font-Size="Medium" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Invalid Phone Number" ControlToValidate="TextBox2" ForeColor="Red" ValidationExpression="^[0-9]{10}$"></asp:RegularExpressionValidator>
         </div>
+         <div class="form-group">
+              <label for="Email">Email:</label>
+             <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" ErrorMessage="please enter the email" ForeColor="Red"></asp:RequiredFieldValidator>
+            </div>
+        <div class="form-group">
+            <label for="Location">Location:</label>
+            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6" ErrorMessage="please enter the location" ForeColor="Red"></asp:RequiredFieldValidator>
+        </div>
         <div class="form-group">
           <label for="password">Password:</label>
             <asp:TextBox ID="TextBox3" TextMode="Password" runat="server"></asp:TextBox>
