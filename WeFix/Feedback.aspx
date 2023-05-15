@@ -6,7 +6,6 @@
 	margin: 30px auto;
 	padding: 50px 20px;
 	background: #fff;
-	
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px #ccc;
 }
@@ -51,6 +50,11 @@ textarea {
 	background: #2980b9;
 }
 
+.Button1{
+	width:100px;
+	margin-left:200px;
+}
+
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -62,7 +66,8 @@ textarea {
 			<label for="email">Worker Name</label>
 		    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 			<label for="message">Message</label>
+		 	<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*fill this field" ControlToValidate="TextBox3" ForeColor="Red"></asp:RequiredFieldValidator>
 			<asp:TextBox ID="TextBox3" runat="server" multiline="true"></asp:TextBox>
-		    <asp:Button ID="Button1" runat="server" Text="Feedback" OnClick="Button1_Click" />
+		    <asp:Button ID="Button1" CssClass="Button1" runat="server" Text="Feedback" OnClick="Button1_Click" />
 	</div>
 </asp:Content>

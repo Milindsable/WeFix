@@ -148,6 +148,7 @@
     <Content Include="Home.aspx" />
     <Content Include="Appointment_Page.aspx" />
     <Content Include="Worker_current_appointment.aspx" />
+    <Content Include="Worker_feedback.aspx" />
     <Content Include="Worker_ho.aspx" />
     <Content Include="worker_past.aspx" />
     <Content Include="Worker_registration.aspx" />
@@ -391,6 +392,13 @@
     </Compile>
     <Compile Include="Worker_current_appointment.aspx.designer.cs">
       <DependentUpon>Worker_current_appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worker_feedback.aspx.cs">
+      <DependentUpon>Worker_feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worker_feedback.aspx.designer.cs">
+      <DependentUpon>Worker_feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worker_master.Master.cs">
       <DependentUpon>Worker_master.Master</DependentUpon>
