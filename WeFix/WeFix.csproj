@@ -124,6 +124,7 @@
     <Content Include="contractor_past.aspx" />
     <Content Include="electrical_contractor_info.aspx" />
     <Content Include="electrician_info.aspx" />
+    <Content Include="Feedback.aspx" />
     <Content Include="furniture_contractor_info.aspx" />
     <Content Include="image\painter.jpg" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
@@ -242,6 +243,13 @@
     </Compile>
     <Compile Include="electrician_info.aspx.designer.cs">
       <DependentUpon>electrician_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="first.Master.cs">
       <DependentUpon>first.Master</DependentUpon>

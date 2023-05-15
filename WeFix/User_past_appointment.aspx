@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="User_past_appointment.aspx.cs" Inherits="WeFix.User_past_appointment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="User_past_appointment.aspx.cs" Inherits="WeFix.User_past_appointment" EnableEventValidation="false" ValidateRequest="false"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
 		table {
@@ -37,6 +37,7 @@
                 <th>Skills</th>
                 <th>Location</th>
                 <th>Date</th>
+                <th>Feedback</th>
             </tr>
             </thead>
     </HeaderTemplate>
@@ -61,6 +62,9 @@
             </td>
             <td>
                  <asp:Label ID="lbldate" runat="server" Text='<%# Eval("date") %>' />
+            </td>
+             <td>
+                 <asp:Button ID="Button1" runat="server" Text="Feedback" OnClick="Button1_Click"/>
             </td>
         </tr>
         </tbody>

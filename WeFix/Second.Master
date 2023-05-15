@@ -131,6 +131,11 @@ a:hover {
 .header{
     background-color:#fff;
 }
+.button1{
+    width:100px;
+    float:right;
+    margin-top:10px;
+}
     
 </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -183,7 +188,7 @@ a:hover {
     </div>
   </div >
             <div>
-                <asp:Button ID="Button1" runat="server" OnClick="logout" Text="Logout" />
+                <asp:Button ID="Button1" runat="server" OnClick="logout" Text="Logout" CssClass="button1" />
 
    </div>
 </div>

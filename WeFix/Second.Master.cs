@@ -12,7 +12,7 @@ namespace WeFix
 {
     public partial class Second : System.Web.UI.MasterPage
     {
-        MySqlConnection con = new MySqlConnection("Data Source = localhost; Database=;User ID = root; Password=nikita");
+        MySqlConnection con = new MySqlConnection("Data Source = localhost; Database=wefix;User ID = root; Password=nikita");
         protected void Page_Load(object sender, EventArgs e)
         {
             con.Open();

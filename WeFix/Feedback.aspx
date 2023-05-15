@@ -1,11 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="ContactUs.aspx.cs" Inherits="WeFix.ContactUs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Second.Master" AutoEventWireup="true" CodeBehind="Feedback.aspx.cs" Inherits="WeFix.Feedback" EnableEventValidation="false" ValidateRequest="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
+	 <style>
      .container1 {
 	max-width: 550px;
 	margin: 30px auto;
 	padding: 50px 20px;
 	background: #fff;
+	
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px #ccc;
 }
@@ -27,6 +28,7 @@ input,
 textarea {
 	padding: 10px;
 	border-radius: 5px;
+	
 	width: 95%;
 	margin-bottom: 20px;
 }
@@ -54,16 +56,13 @@ textarea {
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="container1">
 		
-			<h1>Contact Us</h1>
-			<label for="name">Name</label>
-			<input type="text" id="name" name="name" required>
-			<label for="email">Email</label>
-			<input type="email" id="email" name="email" required>
-			<label for="subject">Subject</label>
-			<input type="text" id="subject" name="subject" required>
+			<h1>Feedback</h1>
+			<label for="name">Username</label>
+		    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+			<label for="email">Worker Name</label>
+		    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 			<label for="message">Message</label>
-			<textarea id="message" name="message" required></textarea>
-			<button  type="submit" class="submit">Submit</button>
-		
+			<asp:TextBox ID="TextBox3" runat="server" multiline="true"></asp:TextBox>
+		    <asp:Button ID="Button1" runat="server" Text="Feedback" OnClick="Button1_Click" />
 	</div>
 </asp:Content>
