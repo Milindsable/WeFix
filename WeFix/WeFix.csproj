@@ -126,6 +126,7 @@
     <Content Include="electrical_contractor_info.aspx" />
     <Content Include="electrician_info.aspx" />
     <Content Include="Feedback.aspx" />
+    <Content Include="Feedback_contractor.aspx" />
     <Content Include="furniture_contractor_info.aspx" />
     <Content Include="image\painter.jpg" />
     <Content Include="image\undraw_coffee_break_h3uu %282%29.svg" />
@@ -142,6 +143,8 @@
     <Content Include="Profile_user.aspx" />
     <Content Include="Profile_worker.aspx" />
     <Content Include="Registration_Page.aspx" />
+    <Content Include="user_contractor_current.aspx" />
+    <Content Include="User_contractor_past.aspx" />
     <Content Include="User_current_appointments.aspx" />
     <Content Include="User_past_appointment.aspx" />
     <Content Include="Web.config" />
@@ -259,6 +262,13 @@
     </Compile>
     <Compile Include="Feedback.aspx.designer.cs">
       <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback_contractor.aspx.cs">
+      <DependentUpon>Feedback_contractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback_contractor.aspx.designer.cs">
+      <DependentUpon>Feedback_contractor.aspx</DependentUpon>
     </Compile>
     <Compile Include="first.Master.cs">
       <DependentUpon>first.Master</DependentUpon>
@@ -379,6 +389,20 @@
     </Compile>
     <Compile Include="Appointment_Page.aspx.designer.cs">
       <DependentUpon>Appointment_Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user_contractor_current.aspx.cs">
+      <DependentUpon>user_contractor_current.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user_contractor_current.aspx.designer.cs">
+      <DependentUpon>user_contractor_current.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_contractor_past.aspx.cs">
+      <DependentUpon>User_contractor_past.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_contractor_past.aspx.designer.cs">
+      <DependentUpon>User_contractor_past.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_current_appointments.aspx.cs">
       <DependentUpon>User_current_appointments.aspx</DependentUpon>
