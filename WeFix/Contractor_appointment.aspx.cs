@@ -40,12 +40,12 @@ namespace WeFix
             string email = (string)Session["email"];
             string mobile = (string)Session["phone"];
             string loc = (string)Session["locationU"];
-          string str = "SELECT COUNT(*) FROM appointment_contractor where Userid='" + uid + "' AND date='" + dt.ToString("yyyy/MM/dd") + "'";
+            string str = "SELECT COUNT(*) FROM appointment_contractor where Userid='" + uid + "' AND date='" + dt.ToString("yyyy/MM/dd") + "' AND contid='"+ TextBox2.Text.ToString() + "'";
             //select count(*) from wefix.appointment where Userid = 6 AND date = '2023-05-19';
             cmd = new MySqlCommand(str, con);
             int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-            if (count > 1)
+            if (count > 0)
             {
                 ScriptManager.RegisterStartupScript(this, GetType(), "", "alert('you cant appoint more than 2 contractors for same date!!!');", true);
             }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Worker_master.Master" AutoEventWireup="true" CodeBehind="Worker_current_appointment.aspx.cs" Inherits="WeFix.Worker_current_appointment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Worker_master.Master" AutoEventWireup="true" CodeBehind="Worker_current_appointment.aspx.cs" Inherits="WeFix.Worker_current_appointment" EnableEventValidation="false" ValidateRequest="false"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
       <style>
 		table {
@@ -61,7 +61,7 @@
             </td>
             
          <td>
-                <asp:Button ID="Button1" runat="server" Text="Delete"  />
+                <asp:Button ID="Button1" runat="server" Text="Delete" OnClick="Button1_Click" />
             </td>       
         </tr>
         </tbody>

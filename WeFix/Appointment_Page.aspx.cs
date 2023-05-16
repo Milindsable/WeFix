@@ -45,12 +45,12 @@ namespace WeFix
             string email = (string)Session["email"];
             string mobile = (string)Session["phone"];
             string loc = (string)Session["locationU"];
-            string str = "SELECT COUNT(*) FROM appointment where Userid='"+uid+"' AND date='"+ dt.ToString("yyyy/MM/dd") + "'";
+            string str = "SELECT COUNT(*) FROM appointment where Userid='"+uid+"' AND date='"+ dt.ToString("yyyy/MM/dd") + "'AND workerid='"+ TextBox2.Text.ToString() + "'";
             //select count(*) from wefix.appointment where Userid = 6 AND date = '2023-05-19';
             cmd = new MySqlCommand(str, con);
             int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-            if (count > 1)
+            if (count > 0)
             {
                 ScriptManager.RegisterStartupScript(this, GetType(), "", "alert('you cant appoint more than 2 workers for same date!!!');", true);
             }
@@ -64,7 +64,7 @@ namespace WeFix
                     {
                     //r = "insert into appointment(Userid,workerid,wname,wtype,skills,location,date)  values ('" + uid + "','" + TextBox2.Text.ToString() + "','" + TextBox1.Text.ToString() + "','" + TextBox3.Text.ToString() + "','" + TextBox4.Text.ToString() + "','" + TextBox5.Text.ToString() + "','" + dt.ToString("yyyy/MM/dd") + "')";
                     //sert into appointment(Userid,workerid,wname,wtype,skills,location,date,username,mobileU,locationU,emailU) values ('" + uid + "', '" + TextBox2.Text.ToString() + "', '" + TextBox1.Text.ToString() + "', '" + TextBox3.Text.ToString() + "', '" + TextBox4.Text.ToString() + "', '" + TextBox5.Text.ToString() + "', '" + dt.ToString("yyyy/MM/dd") + "')";
-                    str = "Insert into appointment(Userid,workerid,wname,wtype,skills,location,date,username,mobileU,locationU,emailU) values ('" + uid + "', '" + TextBox2.Text.ToString() + "', '" + TextBox1.Text.ToString() + "', '" + TextBox3.Text.ToString() + "', '" + TextBox4.Text.ToString() + "', '" + TextBox5.Text.ToString() + "', '" + dt.ToString("yyyy/MM/dd") + "','" + user + "','" + mobile + "','" + loc + "','" + email + "')";
+                        str = "Insert into appointment(Userid,workerid,wname,wtype,skills,location,date,username,mobileU,locationU,emailU) values ('" + uid + "', '" + TextBox2.Text.ToString() + "', '" + TextBox1.Text.ToString() + "', '" + TextBox3.Text.ToString() + "', '" + TextBox4.Text.ToString() + "', '" + TextBox5.Text.ToString() + "', '" + dt.ToString("yyyy/MM/dd") + "','" + user + "','" + mobile + "','" + loc + "','" + email + "')";
                         cmd = new MySqlCommand(str, con);
                         cmd.ExecuteNonQuery();
                         ScriptManager.RegisterStartupScript(this, GetType(), "AppointmentSuccess", "alert('appointment booked!');", true);

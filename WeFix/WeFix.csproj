@@ -120,6 +120,7 @@
     <Content Include="construction_contractor_info.aspx" />
     <Content Include="Contractor_appointment.aspx" />
     <Content Include="contractor_current.aspx" />
+    <Content Include="Contractor_feedback.aspx" />
     <Content Include="Contractor_home.aspx" />
     <Content Include="contractor_past.aspx" />
     <Content Include="electrical_contractor_info.aspx" />
@@ -216,6 +217,13 @@
     </Compile>
     <Compile Include="contractor_current.aspx.designer.cs">
       <DependentUpon>contractor_current.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contractor_feedback.aspx.cs">
+      <DependentUpon>Contractor_feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contractor_feedback.aspx.designer.cs">
+      <DependentUpon>Contractor_feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contractor_home.aspx.cs">
       <DependentUpon>Contractor_home.aspx</DependentUpon>

@@ -64,7 +64,7 @@
                  <asp:Label ID="lbldate" runat="server" Text='<%# Eval("date") %>' />
             </td>
             <td>
-                <asp:Button ID="Button1" runat="server" Text="Delete"  />
+                <asp:Button ID="Button1" runat="server" Text="Delete" OnClick="Button1_Click" />
             </td>
         </tr>
         </tbody>
