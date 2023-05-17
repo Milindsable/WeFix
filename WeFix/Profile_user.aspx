@@ -16,10 +16,11 @@
 			flex-direction: column;
 			align-items: center;
 			padding: 30px;
-			width: 90%;
+			width: 400px;
 			max-width: 600px;
 			margin-top:100px;
 			margin-bottom:50px;
+			height:400px;
 		}
 		.profile-image {
 			border-radius: 50%;
@@ -60,6 +61,31 @@
 		.profile-button:hover {
 			background-color: #0056b3;
 		}
+		.view{
+			margin-top:50px;
+			margin-left:50px;
+		}
+		.button{
+			margin-top:60px;
+		}
+
+		.b {
+  background-color:#F3DEBA;
+  color:black;
+  font-weight:bold;
+  font-size:medium;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  margin-left:30px;
+  width:200px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -67,9 +93,14 @@
     <div class="container1">
 		<div class="profile-card">
 			<img class="profile-image" src="image/undraw_pic_profile_re_7g2h.svg" alt="Profile Image">
+			<div class="view">
 			<asp:DetailsView ID="DetailsView1" runat="server" Height="64px" Width="1202px" BorderColor="#ACB1D6" BorderStyle="None" BorderWidth="0px" CellPadding="5" CellSpacing="100" CssClass="container1" Font-Bold="True" Font-Names="Century Gothic">
-	
 			</asp:DetailsView>
 			</div>
+			<div class="button">
+				<asp:Button ID="Button1" CssClass="b" runat="server" OnClick="Button1_Click" Text="Update Profile" />
+			</div>
+
+      </div>
 	</div>
 </asp:Content>

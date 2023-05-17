@@ -63,7 +63,7 @@ namespace WeFix
                     cmd.ExecuteNonQuery();
                     ScriptManager.RegisterStartupScript(this, GetType(), "AppointmentSuccess", "alert('appointment booked!');", true);
                     con.Close();
-                }
+               }
             }
         }
     }
