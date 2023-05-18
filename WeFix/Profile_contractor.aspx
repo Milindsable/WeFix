@@ -57,6 +57,8 @@
 			text-align: center;
 			text-decoration: none;
 			transition: background-color 0.3s ease-in-out;
+			margin-left:510px;
+			margin-top:120px;
 		}
 		.profile-button:hover {
 			background-color: #0056b3;
@@ -74,6 +76,7 @@
 			<div class="detail">
 			<asp:DetailsView ID="DetailsView1" runat="server" Height="64px" Width="1202px" BorderColor="#ACB1D6" BorderStyle="None" BorderWidth="0px" CellPadding="5" CellSpacing="100" CssClass="container1" Font-Bold="True" Font-Names="Century Gothic">
 			</asp:DetailsView>
+				<asp:Button ID="Button1" CssClass="profile-button" OnClick="Button1_Click" runat="server"  Text="Update Profile" />
 			</div>
 			</div>
 	</div>

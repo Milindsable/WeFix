@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace WeFix
 {
-    public partial class Profile_update_worker : System.Web.UI.Page
+    public partial class Profile_update_contractor : System.Web.UI.Page
     {
         MySqlConnection con = new MySqlConnection("Data Source=localhost;Database=wefix;User ID = root; Password = nikita");
 
@@ -20,10 +19,10 @@ namespace WeFix
                 // Your existing code to populate the textboxes with session values
 
                 con.Open();
-                
-                string wid = Session["wid"].ToString();
 
-                string str1 = "SELECT name,work_type,skills,phoneno,email,location,password,price FROM worker where wid='" + wid + "'";
+                string cid = Session["cid"].ToString();
+
+                string str1 = "SELECT name,work_type,skills,phoneno,email,location,password,price FROM contractor where cid='" + cid + "'";
                 MySqlCommand cmd1 = new MySqlCommand(str1, con);
                 MySqlDataReader dr = cmd1.ExecuteReader();
                 dr.Read();
@@ -53,8 +52,8 @@ namespace WeFix
         protected void Button1_Click(object sender, EventArgs e)
         {
             con.Open();
-            int wid = Convert.ToInt32(Session["wid"]);
-            string str = "update worker set name='" + TextBox5.Text.ToString() + "',work_type='" + TextBox1.Text.ToString() + "',skills='" + TextBox2.Text.ToString() + "',phoneno='" + TextBox6.Text.ToString() + "',email='" + TextBox3.Text.ToString() + "',location='" + TextBox4.Text.ToString()+ "',password='" + TextBox7.Text.ToString() + "',price='" + TextBox9.Text.ToString() + "' where wid='" + wid + "'";
+            int cid = Convert.ToInt32(Session["cid"]);
+            string str = "update contractor set name='" + TextBox5.Text.ToString() + "',work_type='" + TextBox1.Text.ToString() + "',skills='" + TextBox2.Text.ToString() + "',phoneno='" + TextBox6.Text.ToString() + "',email='" + TextBox3.Text.ToString() + "',location='" + TextBox4.Text.ToString() + "',password='" + TextBox7.Text.ToString() + "',price='" + TextBox9.Text.ToString() + "' where cid='" + cid + "'";
 
 
             MySqlCommand cmd = new MySqlCommand(str, con);

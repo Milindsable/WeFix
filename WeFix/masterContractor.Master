@@ -155,9 +155,8 @@ a:hover {
   <a style="color:white;" href="Profile_contractor.aspx">Profile</a>
             
  
-  <div class="subnav">
-    <button class="subnavbtn">Feedback</button>
- 
+ <div class="subnav">
+    <a style="color:white;" href="Feedback_contractor.aspx">Feedback</a>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Appointments <i class="fa fa-caret-down"></i></button>

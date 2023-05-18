@@ -20,10 +20,15 @@
             padding: 5px;
             border: 1px solid #ccc;
         }
+        .main{
+            margin-top:100px;
+            margin-left:150px;
+        }
     </style>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="main">
     <asp:DataList ID="dlCustomers" runat="server" RepeatColumns = "3" CellSpacing = "3" RepeatLayout = "Table">
     <ItemTemplate>
         <table class = "table">
@@ -40,5 +45,5 @@
         </table>
     </ItemTemplate>
 </asp:DataList>
-
+    </div>
 </asp:Content>

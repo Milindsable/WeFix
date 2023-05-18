@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Worker_master.Master" AutoEventWireup="true" CodeBehind="Profile_update_worker.aspx.cs" Inherits="WeFix.Profile_update_worker" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterContractor.Master" AutoEventWireup="true" CodeBehind="Profile_update_contractor.aspx.cs" Inherits="WeFix.Profile_update_contractor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         

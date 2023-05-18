@@ -140,6 +140,7 @@
     <Content Include="painter_info.aspx" />
     <Content Include="Plumbers_info1.aspx" />
     <Content Include="Profile_contractor.aspx" />
+    <Content Include="Profile_update_contractor.aspx" />
     <Content Include="Profile_update_form_user.aspx" />
     <Content Include="Profile_update_worker.aspx" />
     <Content Include="Profile_user.aspx" />
@@ -334,6 +335,13 @@
     </Compile>
     <Compile Include="Profile_contractor.aspx.designer.cs">
       <DependentUpon>Profile_contractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile_update_contractor.aspx.cs">
+      <DependentUpon>Profile_update_contractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile_update_contractor.aspx.designer.cs">
+      <DependentUpon>Profile_update_contractor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Profile_update_form_user.aspx.cs">
       <DependentUpon>Profile_update_form_user.aspx</DependentUpon>
