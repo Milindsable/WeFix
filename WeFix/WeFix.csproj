@@ -133,6 +133,8 @@
     <Content Include="image\undraw_pic_profile_re_7g2h.svg" />
     <Content Include="image\undraw_quitting_time_re_1whp.svg" />
     <Content Include="image\undraw_team_spirit_re_yl1v.svg" />
+    <Content Include="image\workers_img\carpenter.jpg" />
+    <Content Include="image\workers_img\electrician.jpg" />
     <Content Include="image\workers_img\plumber.jpg" />
     <Content Include="Login_Page.aspx" />
     <Content Include="mason_info.aspx" />
@@ -492,6 +494,8 @@
     <Content Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </Content>
+    <Content Include="image\workers_img\mason.avif" />
+    <Content Include="image\workers_img\painter.avif" />
     <None Include="packages.config" />
     <Content Include="Worker_master.Master" />
     <Content Include="adminMaster.Master" />

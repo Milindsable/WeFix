@@ -21,10 +21,17 @@
 		 tr:hover {
 		 	background-color: #f2f2f2;
 		 }
+         .img{
+             margin-top:50px;
+             margin-left:300px;
+         }
 	</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-top:50px;">
+    <div class="img">
+        <img src="https://img.freepik.com/premium-vector/electricians-work-with-wiring-lighting-flat-vector-illustration-isolated_181313-2912.jpg?size=626&ext=jpg&ga=GA1.1.1569009883.1684456825&semt=ais" />
+    </div>
+    <div style="margin-top:50px;margin-bottom:20px;">
     <asp:Repeater runat="server" ID="MyRepeater">
     <HeaderTemplate>
         <table border="1">

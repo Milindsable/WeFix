@@ -30,9 +30,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="img">
-        <img src="image/workers_img/plumber.jpg" />
+        <img src="https://media.istockphoto.com/id/1289185984/vector/plumber-repairing-pipe-burst.jpg?s=612x612&w=0&k=20&c=bj8nMamdz8bHwRt5eACEa5g7UJdKGiBIj2F8K_AuI6E=" />
     </div>
-    <div style="margin-top:50px;">
+    <div style="margin-top:50px;margin-bottom:20px">
    <asp:Repeater runat="server" ID="MyRepeater">
     <HeaderTemplate>
         <table border="1">

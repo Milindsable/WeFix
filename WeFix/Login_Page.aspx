@@ -56,15 +56,7 @@ input[type="text"], input[type="password"] {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  cursor: pointer;
-}
+
 
 button:hover {
   background-color: #3e8e41;
@@ -83,6 +75,9 @@ button:hover {
 
 .register-link a:hover {
   text-decoration: underline;
+}
+.button{
+    position:center;
 }
 
     </style>
@@ -113,7 +108,7 @@ button:hover {
             <asp:TextBox ID="TextBox2" TextMode="Password" runat="server"></asp:TextBox>  
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please enter the password" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
-        <asp:Button ID="Button1" runat="server" OnClick="LoginButton_Click" Text="Login" BackColor="#33CCFF" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Height="35px" Width="75px" />
+        <asp:Button ID="Button1" runat="server" OnClick="LoginButton_Click" Text="Login" BackColor="#00FFCA" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Height="35px" Width="75px" ClassCss="button"/>
       <div class="register-link">
         Don't have an account? <a href="Registration_Page.aspx">Register now</a>
       </div>

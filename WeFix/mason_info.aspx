@@ -22,10 +22,19 @@
 		  	background-color: #f2f2f2;
 		
 			 }
+          .img{
+              margin-left:250px;
+              margin-top:50px;
+             
+  
+          }
 	</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div style="margin-top:50px;">
+    <div class="img">
+        <img src="https://img.freepik.com/free-vector/professional-builders-making-brick-wall-site-helmet-constructor-flat-vector-illustration-construction-engineering_74855-8539.jpg?size=626&ext=jpg&ga=GA1.2.1569009883.1684456825&semt=ais" />
+    </div>
+     <div style="margin-top:50px;margin-bottom:20px;">
      <asp:Repeater runat="server" ID="MyRepeater">
     <HeaderTemplate>
         <table border="1">
