@@ -47,7 +47,7 @@ namespace WeFix
 
             if (count > 0)
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "", "alert('you cant appoint more than 2 contractors for same date!!!');", true);
+                ScriptManager.RegisterStartupScript(this, GetType(), "", "alert('you cant appoint more than 1 contractors for same date!!!');", true);
             }
             else
             {
@@ -63,7 +63,7 @@ namespace WeFix
                     cmd.ExecuteNonQuery();
                     ScriptManager.RegisterStartupScript(this, GetType(), "AppointmentSuccess", "alert('appointment booked!');", true);
                     con.Close();
-               }
+              }
             }
         }
     }
